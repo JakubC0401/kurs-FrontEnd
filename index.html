@@ -20,10 +20,11 @@
     fieldset - zbiór - zestaw pól
     legend - opis dla fieldset
     label - etykieta
+
     Atrybut checked
    -->
 
-   <form action="dane.php">
+   <form action="ankieta.php">
         <fieldset>
             <legend>Przedział wiekowy?</legend> 
             <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa1" value = "15-18"> <label for="kategoria_wiekowa1">15-18</label> <br>
@@ -31,6 +32,14 @@
             <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa3" value = "26-35"> <label for="kategoria_wiekowa3">26-35</label> <br>
             <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa4" value = "36-45"> <label for="kategoria_wiekowa4">36-45</label> <br>
             <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa5" value = "46+"  > <label for="kategoria_wiekowa5">46+</label>   <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Jakie jest twoje hobby? </legend>
+            <input type="checkbox" name="hobby" id= "Pilka_nożna" value="Pilka_nożna"> <label for="Pilka_nożna">Piłka nożna</label>
+            <input type="checkbox" name="hobby" id= "Plywanie" value="Plywanie"> <label for="Plywanie">Pływanie</label>
+            <input type="checkbox" name="hobby" id= "Siatkówka" value="Siatkówka"> <label for="Siatkówka">Siatkówka</label>
+            
         </fieldset>
 
         <input type="submit" value="Wyślij">
