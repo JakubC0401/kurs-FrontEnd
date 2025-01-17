@@ -13,25 +13,29 @@
 <body style="background-color: rgb(228, 231, 202);">
 
 
-  <!-- formularz 
-   sluży do zbierania danych od użytkownika-->
+  <!-- 
+    pole radio - radio - ile masz lat
+    pole wyboru - checkbox - jakie jest twoje hobby?
 
-   <!-- atrybuty:
-                NAME
-                ACTION
-                METHOD = GET/POST-->
-    <form action="login.php" method="POST">
-        Login: <input type="text" name="login">
-        
-        <br>
+    fieldset - zbiór - zestaw pól
+    legend - opis dla fieldset
+    label - etykieta
+    Atrybut checked
+   -->
 
-        Password: <input type="password" name="pw">
+   <form action="dane.php">
+        <fieldset>
+            <legend>Przedział wiekowy?</legend> 
+            <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa1" value = "15-18"> <label for="kategoria_wiekowa1">15-18</label> <br>
+            <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa2" value = "19-25"> <label for="kategoria_wiekowa2">19-25</label> <br>
+            <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa3" value = "26-35"> <label for="kategoria_wiekowa3">26-35</label> <br>
+            <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa4" value = "36-45"> <label for="kategoria_wiekowa4">36-45</label> <br>
+            <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa5" value = "46+"  > <label for="kategoria_wiekowa5">46+</label>   <br>
+        </fieldset>
 
-        <br>
-        
-        <input type="submit" value="Log in">
+        <input type="submit" value="Wyślij">
+   </form> 
 
-    </form>
 
 
 </body>
