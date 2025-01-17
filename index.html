@@ -25,9 +25,12 @@
    -->
 
    <form action="ankieta.php">
+
+        <input placeholder="login" type="text" name="login" required> <br>
+        <input placeholder="hasło" type="password" name="password" required> <br>
         <fieldset>
-            <legend>Przedział wiekowy?</legend> 
-            <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa1" value = "15-18"> <label for="kategoria_wiekowa1">15-18</label> <br>
+            <legend  >Przedział wiekowy?</legend> 
+            <input autofocus type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa1" value = "15-18"> <label for="kategoria_wiekowa1">15-18</label> <br>
             <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa2" value = "19-25"> <label for="kategoria_wiekowa2">19-25</label> <br>
             <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa3" value = "26-35"> <label for="kategoria_wiekowa3">26-35</label> <br>
             <input type="radio" name = "kategoria_wiekowa" id = "kategoria_wiekowa4" value = "36-45"> <label for="kategoria_wiekowa4">36-45</label> <br>
@@ -39,9 +42,13 @@
             <input type="checkbox" name="hobby" id= "Pilka_nożna" value="Pilka_nożna"> <label for="Pilka_nożna">Piłka nożna</label>
             <input type="checkbox" name="hobby" id= "Plywanie" value="Plywanie"> <label for="Plywanie">Pływanie</label>
             <input type="checkbox" name="hobby" id= "Siatkówka" value="Siatkówka"> <label for="Siatkówka">Siatkówka</label>
-            
+            <input type="checkbox" name="hobby" id= "brak" value="brak" checked> <label for="brak">brak na liście</label>
         </fieldset>
-
+        Kod pocztowy <input type="text" name="postal_code" autocomplete="on" size="3" > <br>
+        miasto: <input type="text" name="miasto" required size="5"> <br>
+        ulica: <input type="text" name="ulica" required size="5"> <br>
+        nr. domu: <input type="text" name="nr_domu" required size="1"> <br>
+        nr. mieszkania: <input type="text" name="nr_mieszkania"size="1"> <br>
         <input type="submit" value="Wyślij">
    </form> 
 
