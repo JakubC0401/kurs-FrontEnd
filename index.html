@@ -15,65 +15,32 @@
 
     <link rel="stylesheet" href="CSS/style.css"> <!-- podłączenie pliku css -->
     <title>Sample Document</title>
-
-    <style>
-        p{
-            color:aliceblue;
-        }
-    </style>
 </head>
 <body style="background-color: rgb(228, 231, 202);">
 
     <!--
-        CSS - Cascade Style Sheets
-
-        SELECTOR 
-        {
-            PROPERTY: VALUE;
-        }
-
-        SELEKTOR 
-        {
-            WŁAŚCIWOŚĆ: WARTOŚĆ;
-        }
-
-        zapamiętaj że istotny jest priorytet, o to chodzi w kaskadowości!!
-
-        przeglądarka >>>>
-                        styl zewnętrzny w pliku CSS >>>>
-                                                    styl wewnętrzny w pliku HTML >>>>
-                                                                                styl wbudowany w tagu HTML >>>>
-                                                                                                            styl inline w tagu HTML
+        id  vs  class
+        #
+        jeden vs wiele
     -->
-    <p style="color: purple;">to jest testowy tekst</p>
-    <p>to jest testowy tekst</p>
-    <p>to jest testowy tekst</p>
-    <p>to jest testowy tekst</p>
-    <p>to jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
 
-    <table>
-        <caption>CENY KURSÓW</caption>
-        <thead>
-            <tr>
-                <th>Kurs</th>
-                <th>Cena</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>1500</td>
-            </tr>
-            <tr>
-                <td>JS</td>
-                <td>2000</td>
-            </tr>
-        </tbody>
-    </table>
+    <address id="home_address"> Jakub Czyż </address>
 
+    <form id="zamowienie">
+        <input class = "input-text" type="text" name="" id="">
+        <input class = "input-text" type="text" name="" id="">
+        <input class = "input-text" type="text" name="" id="">
+    </form>
+
+
+    <form id="koszyk">
+        <input class ="input-text" type="text">
+        <input class ="input-text" type="text">
+    </form>
 </body>
 </html>

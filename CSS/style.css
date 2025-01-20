@@ -3,3 +3,29 @@ p
     font-weight: bold;
 }
 
+.center
+{
+    text-align: center;
+}
+
+/*.input-text
+{
+    color: blue;
+    width: 50px;
+}
+*/
+#home_address
+{
+    color: red;
+    text-align: center;
+}
+#zamowienie .input-text
+{
+    color: red;
+    width: 50px;
+}
+#koszyk .input-text
+{
+    text-align: center;
+    color: blue;
+}
