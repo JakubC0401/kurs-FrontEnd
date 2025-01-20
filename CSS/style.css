@@ -1,36 +1,11 @@
-p
-{
+.main-title{
+    color:blue;
+}
+.description{
+    color: green;
+    font-size: 18px;
+}
+#unique{
+    color: red;
     font-weight: bold;
-}
-
-.center
-{
-    text-align: center;
-}
-
-/*.input-text
-{
-    color: blue;
-    width: 50px;
-}
-*/
-#zamowienie
-{
-    color: red;
-    text-align: center;
-}
-#home_address
-{
-    color: red;
-    text-align: center;
-}
-#zamowienie .input-text
-{
-    color: red;
-    width: 50px;
-}
-#koszyk .input-text
-{
-    text-align: center;
-    color: blue;
 }
