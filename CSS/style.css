@@ -1,7 +1,22 @@
 body{
     background-color: aliceblue;
     margin: 0;
+    color:blue;
 }
-div *.Foo{
+div{
+    color: beige;
+}
+.type1{
+    background-color: red;
+}
+.type2{
+    background-color: green;
+}
+#test span{
+    color: black;
+    font-weight: bold;
+}
+#test p{
     color:red;
+    font-weight: unset;
 }

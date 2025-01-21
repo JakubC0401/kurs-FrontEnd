@@ -20,53 +20,30 @@
 
 
     
-<table>
-    <tr>
-        <th>Selektory</th>
-        <th>Wyjaśnienie</th>
-    </tr>
-    <tr>
-        <td>p</td>
-        <td>wybierz elementy o nazwie <b>p</b></td>
-    </tr>
-    <tr>
-        <td>.foo</td>
-        <td>wybierz elementy który class = <b>foo</b></td>
-    </tr>
-    <tr>
-        <td>#identyfikator</td>
-        <td>wybierz wszystkie elementy których id=<b>identyfikator</b></td>
-    </tr>
-    <tr>
-        <td>div,p</td>
-        <td>wybierz wszystkie elementy o nazwie <b>div</b> oraz <b>p</b></td>
-    </tr>
-    <tr>
-        <td>div p</td>
-        <td>wybierz wszystkie elementy o nazwie p wewnątrz elementu <b>div</b></td>
-    </tr>
-    <tr>
-        <td>div .foo</td>
-        <td>	wybierz wszystkie elementy o class=<b>foo</b>, wewnątrz elementu <b>div</b>.</td>
-    </tr>
-    <tr>
-        <td>div p.foo</td>
-        <td>wybierz wszystkie elementy o nazwie p, których class='<b>foo</b>' - wewnątrz elementu <b>div</b>.</td>
-    </tr>
-    <tr>
-        <td>*</td>
-        <td>wybierz wszystkie elementy na stronie</td>
-    </tr>
-</table>
+<!--
+div - element blokowy   vs  span - element liniowy
+division - podział          rozpiętość/zakres
 
-<div>
-    <p class="Foo">Foo</p>
-    <p class="Foo">Foo</p>
-    <p>not Foo</p>
-    <div class="Foo">not p, foo</div>
+block                       inline
+
+
+div i span to NEUTRALNE tagi
+-->
+
+<div class="type1">type1</div>
+<div class="type1">type1</div>
+<div class="type1">type1</div>
+
+<div class="type2">type2</div>
+<div class="type2">type2</div>
+<div class="type2">type2</div>
+
+<div id = "test">
+    <span>  test span </span>
+    <p>testowy</p>
+    <p>testowy</p>
+    <p>testowy</p>
 </div>
-
-
 
 </body>
 </html>
