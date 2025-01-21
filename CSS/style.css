@@ -1,11 +1,17 @@
-.main-title{
-    color:blue;
+body{
+    background-color: aliceblue;
+    margin: 0;
 }
-.description{
-    color: green;
-    font-size: 18px;
+div{
+    background-color: aqua;
 }
-#unique{
-    color: red;
-    font-weight: bold;
+span{
+    background-color: burlywood;
+}
+.text_class{
+    width: 400px;
+    text-align: center;
+}
+#unique_sample{
+    text-align: center;
 }
