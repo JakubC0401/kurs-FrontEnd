@@ -2,16 +2,20 @@ body{
     background-color: aliceblue;
     margin: 0;
 }
-div{
-    background-color: aqua;
+.type_block{
+   
+    background-color: red;
+    display: block;
 }
-span{
-    background-color: burlywood;
+.type_inline{
+   
+    background-color: green;
+    display: inline;
 }
-.text_class{
-    width: 400px;
-    text-align: center;
-}
-#unique_sample{
-    text-align: center;
+.type_inlineblock{
+    
+    background-color: blue;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
 }
