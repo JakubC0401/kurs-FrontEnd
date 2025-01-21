@@ -19,92 +19,54 @@
 <body>
 
 
-    <!--
-    div                 vs          span
-    division(podizał)               span (fragment)/rozpiętość/zakres
-
-
-    block                           inline
-
-    dispaly: block
-             inline
-             inline-block
-
-    width - szerokość
-    height - wysokość
-    -->
-   <div class ="type_block">block</div>
-   <div class ="type_block">block</div>
-   <div class ="type_block">block</div>
     
-   <div class = "type_inline">inline</div>
-   <div class = "type_inline">inline</div>
-   <div class = "type_inline">inline</div>
+<table>
+    <tr>
+        <th>Selektory</th>
+        <th>Wyjaśnienie</th>
+    </tr>
+    <tr>
+        <td>p</td>
+        <td>wybierz elementy o nazwie <b>p</b></td>
+    </tr>
+    <tr>
+        <td>.foo</td>
+        <td>wybierz elementy który class = <b>foo</b></td>
+    </tr>
+    <tr>
+        <td>#identyfikator</td>
+        <td>wybierz wszystkie elementy których id=<b>identyfikator</b></td>
+    </tr>
+    <tr>
+        <td>div,p</td>
+        <td>wybierz wszystkie elementy o nazwie <b>div</b> oraz <b>p</b></td>
+    </tr>
+    <tr>
+        <td>div p</td>
+        <td>wybierz wszystkie elementy o nazwie p wewnątrz elementu <b>div</b></td>
+    </tr>
+    <tr>
+        <td>div .foo</td>
+        <td>	wybierz wszystkie elementy o class=<b>foo</b>, wewnątrz elementu <b>div</b>.</td>
+    </tr>
+    <tr>
+        <td>div p.foo</td>
+        <td>wybierz wszystkie elementy o nazwie p, których class='<b>foo</b>' - wewnątrz elementu <b>div</b>.</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>wybierz wszystkie elementy na stronie</td>
+    </tr>
+</table>
 
-   <br>
-
-   <div class="type_inlineblock">inline-block</div>
-   <div class="type_inlineblock">inline-block</div>
-   <div class="type_inlineblock">inline-block</div>
-
-    <p class="pierwsza-nazwa"></p>
-
-    <p class="pierwsza druga trzecia"></p>
-
-    <p id="afda"></p>
-
-    <div class="awdgb"></div>
-
-    <div id="asdfasd"></div>
-
-    <em><span class="nazwaklasy"></span></em>
-
-    <ul>
-        <li class="class_name1">aa</li>
-        <li class="class_name2">ab</li>
-        <li class="class_name3">ac</li>
-        <li class="class_name4">ad</li>
-        <li class="class_name5">ae</li>
-    </ul>
+<div>
+    <p class="Foo">Foo</p>
+    <p class="Foo">Foo</p>
+    <p>not Foo</p>
+    <div class="Foo">not p, foo</div>
+</div>
 
 
 
-    <table class="table">
-        <tr class="table_row">
-            <td class="table_column">1</td>
-            <td class="table_column">2</td>
-            <td class="table_column">3</td>
-            <td class="table_column">4</td>
-            <td class="table_column">5</td>
-        </tr>
-        <tr class="table_row">
-            <td class="table_column">2</td>
-            <td class="table_column">4</td>
-            <td class="table_column">6</td>
-            <td class="table_column">8</td>
-            <td class="table_column">10</td>
-        </tr>
-        <tr class="table_row">
-            <td class="table_column">3</td>
-            <td class="table_column">6</td>
-            <td class="table_column">9</td>
-            <td class="table_column">12</td>
-            <td class="table_column">15</td>
-        </tr>
-        <tr class="table_row">
-            <td class="table_column">4</td>
-            <td class="table_column">8</td>
-            <td class="table_column">12</td>
-            <td class="table_column">16</td>
-            <td class="table_column">20</td>
-        </tr>
-        <tr class="table_row">
-            <td class="table_column">5</td>
-            <td class="table_column">10</td>
-            <td class="table_column">15</td>
-            <td class="table_column">20</td>
-            <td class="table_column">25</td>
-        </tr>
-    </table>
 </body>
 </html>
