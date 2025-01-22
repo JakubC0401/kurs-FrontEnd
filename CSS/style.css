@@ -2,25 +2,18 @@ body{
     background-color: aliceblue;
     margin: 0;
 }
-div{
-    margin: 10px;;
-}
-
-.definition{
-    border-left: 5px solid red;
-    background-color: darkgray;
-    border-radius: 10px;
-    width: 10%;
-    text-align: center;
-}
-input{
+table{
     margin: 10px;
-    border-radius: 5px;
+    border-collapse: collapse; 
 }
-.dymek{
-    background-color: aqua;
-    width: 300px;
-    text-align: center;
-    border-radius: 99px 20px 99px 20px;
-    padding: 20px;
+table td{
+    padding: 10px;
+}
+caption, table th{
+
+    padding: 5px;
+    font-size: 24px;
+}
+table tr{
+    border-bottom: 1px solid black;
 }
