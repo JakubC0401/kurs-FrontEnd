@@ -5,73 +5,22 @@ body{
 div{
     margin: 10px;;
 }
-.none{
-    border-style: none;
-}
-.solid{
-    border-style: solid;
 
-}
-.dotted{
-    border-style: dotted;
-    
-}
-.dashed{
-    border-style: dashed;
-    
-}
-.double{
-    border-style: double;
-    
-}
-.groove{
-    border-style: groove;
-    
-}
-.ridge{
-    border-style: ridge;
-    
-}
-.inset{
-    border-style: inset;
-    
-}
-.outset{
-
-    border: 2px outset;
-    width: 300px;
-}
-.mix{
-    border-top-style: dotted;
-    border-bottom-style: solid;
-    border-left-style: ridge;
-    border-right-style: groove;
-
-    border-top-width: 5px;
-    border-top-color: darkgoldenrod;
-    width: 300px;
-
-    
-}
-.mix_short{
-    border-top: 2px solid darkgoldenrod;
-    border-left: 2px dotted blueviolet;
-    border-right: 5px ridge darkred;
-    border-left: 20px groove darkgreen;
-}
 .definition{
     border-left: 5px solid red;
     background-color: darkgray;
-    
-}
-.definition2{
-    border: 1px solid chocolate;
-    border-left-width: 5px;
-    border-top-style: none;
-    border-right-style: none;
-    width: 300px;
-}
-.definition3{
-    border-style: double dotted solid dashed;
+    border-radius: 10px;
+    width: 10%;
     text-align: center;
+}
+input{
+    margin: 10px;
+    border-radius: 5px;
+}
+.dymek{
+    background-color: aqua;
+    width: 300px;
+    text-align: center;
+    border-radius: 99px 20px 99px 20px;
+    padding: 20px;
 }
