@@ -2,22 +2,18 @@ body{
     background-color: aliceblue;
     margin: 0;
 }
-a img{
-    opacity: 0.5;
+.help{
+    cursor: help;
 }
-a img:hover{
-    opacity: 1;
-}
-#komunikator{
-    width: 400px;
-    padding: 100px;
-    background-color: rgba(135, 207, 235, 0.61);
-    text-align: center;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+[data-my-title]:hover::after{
+    content: attr(data-my-title);
+    background-color: rgba(127, 255, 212, 0.397);
+    padding: 10px;
     color: black;
-    font-size: 24px;
-    font-weight: bold;
+    position: absolute;
+    border-radius: 10px;
+}
+[data-my-title]{
+    cursor: help;
+    
 }
