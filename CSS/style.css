@@ -1,22 +1,77 @@
 body{
     background-color: aliceblue;
     margin: 0;
-    color:blue;
 }
 div{
-    color: beige;
+    margin: 10px;;
 }
-.type1{
-    background-color: red;
+.none{
+    border-style: none;
 }
-.type2{
-    background-color: green;
+.solid{
+    border-style: solid;
+
 }
-#test span{
-    color: black;
-    font-weight: bold;
+.dotted{
+    border-style: dotted;
+    
 }
-#test p{
-    color:red;
-    font-weight: unset;
+.dashed{
+    border-style: dashed;
+    
+}
+.double{
+    border-style: double;
+    
+}
+.groove{
+    border-style: groove;
+    
+}
+.ridge{
+    border-style: ridge;
+    
+}
+.inset{
+    border-style: inset;
+    
+}
+.outset{
+
+    border: 2px outset;
+    width: 300px;
+}
+.mix{
+    border-top-style: dotted;
+    border-bottom-style: solid;
+    border-left-style: ridge;
+    border-right-style: groove;
+
+    border-top-width: 5px;
+    border-top-color: darkgoldenrod;
+    width: 300px;
+
+    
+}
+.mix_short{
+    border-top: 2px solid darkgoldenrod;
+    border-left: 2px dotted blueviolet;
+    border-right: 5px ridge darkred;
+    border-left: 20px groove darkgreen;
+}
+.definition{
+    border-left: 5px solid red;
+    background-color: darkgray;
+    
+}
+.definition2{
+    border: 1px solid chocolate;
+    border-left-width: 5px;
+    border-top-style: none;
+    border-right-style: none;
+    width: 300px;
+}
+.definition3{
+    border-style: double dotted solid dashed;
+    text-align: center;
 }
