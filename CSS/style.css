@@ -2,15 +2,22 @@ body{
     background-color: aliceblue;
     margin: 0;
 }
-/*ul{
-    list-style-image: url('../images/tick.png');
-} */
-
-ul{
-    list-style-type: none;
+a img{
+    opacity: 0.5;
 }
-ul li::before {
-    
-    content: "✔\00A0";
-    color: cyan;
+a img:hover{
+    opacity: 1;
+}
+#komunikator{
+    width: 400px;
+    padding: 100px;
+    background-color: rgba(135, 207, 235, 0.61);
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
 }
