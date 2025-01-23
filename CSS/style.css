@@ -5,7 +5,8 @@ body{
 }
 .przyklad{
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Playwrite IN", serif;
+    font-weight: 300;
     font-size: 18px;
     text-align: justify;
     text-indent: 50px;
