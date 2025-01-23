@@ -1,12 +1,24 @@
 body{
     font-size: 20px;
     background-color: aliceblue;
+    background-image: url("../images/background1.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
     margin: 0;
+    
+}
+h1{
+    background-image: url("../images/bck2.png");
+    text-align: center;
+    padding: 40px;
+    color: rgb(32, 32, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .przyklad{
 
     font-family: "Playwrite IN", serif;
     font-weight: 300;
+    color: aliceblue;
     font-size: 18px;
     text-align: justify;
     text-indent: 50px;
@@ -19,9 +31,10 @@ body{
 }
 ul{
     list-style-type: none;
+    color: aliceblue;
 }
 ul li::before{
     content: "\2714\00A0";
-    color: brown;
+    color: white;
     font-size: 20px;
 }
