@@ -3,35 +3,20 @@ body{
     margin: 0;
 }
 .przyklad{
-    background-color: lightyellow;
+    text-align: justify;
+    text-indent: 50px;
     padding: 10px;
-    width: 1000px;
-    white-space: pre-line;
-    text-align: center;
 }
-#input-box{
-
-    padding: 5;
-    margin: 10px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-transform: capitalize;
+.przyklad::first-letter{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
 }
-
-.kod{
-    white-space: pre-wrap;
+ul{
+    list-style-type: none;
 }
-[data-help]{
-    padding: 10px;
-    cursor: help;
-    position: relative;
-
-
-    text-decoration: dotted underline blue;
-}
-[data-help]:hover::after{
-    content: attr(data-help);
-    background-color: aqua;
-    padding: 15px;
-    position: absolute;
+ul li::before{
+    content: "\2714\00A0";
+    color: brown;
+    font-size: 20px;
 }
