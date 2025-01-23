@@ -2,18 +2,36 @@ body{
     background-color: aliceblue;
     margin: 0;
 }
-.help{
-    cursor: help;
-}
-[data-my-title]:hover::after{
-    content: attr(data-my-title);
-    background-color: rgba(127, 255, 212, 0.397);
+.przyklad{
+    background-color: lightyellow;
     padding: 10px;
-    color: black;
-    position: absolute;
-    border-radius: 10px;
+    width: 1000px;
+    white-space: pre-line;
+    text-align: center;
 }
-[data-my-title]{
+#input-box{
+
+    padding: 5;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.kod{
+    white-space: pre-wrap;
+}
+[data-help]{
+    padding: 10px;
     cursor: help;
-    
+    position: relative;
+
+
+    text-decoration: dotted underline blue;
+}
+[data-help]:hover::after{
+    content: attr(data-help);
+    background-color: aqua;
+    padding: 15px;
+    position: absolute;
 }
