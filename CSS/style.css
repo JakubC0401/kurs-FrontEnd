@@ -4,27 +4,28 @@
 }
 
 :root{
-    --container-width: 1200px; /*zmienna globalna*/
+    --container-width: 900px; /*zmienna globalna*/
 }
 #container{
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     background-color: rgba(255, 0, 0, 0.39);
     display: block;
+
     width: var(--container-width);
 }
 .link{
 
     --padding-size: 15px;
-    --border-left-size: 9px;
-    --margin-left-size: 9px;
+    --border-left-size: 3px;
+    --margin-left-size: 20px;
 
     padding: var(--padding_size);
     border-left: var(--border-left-size) solid gainsboro;
     margin-left: var(--margin-left-size);
 
-    width: calc(var(--container-width)/6 - 2*var(--padding-size) - var(--border-left-size) - var(--margin-left-size));
+    width: calc(var(--container-width)/6 - var(--margin-left-size));
 
-
+    box-sizing: border-box;
     display: inline-block;
     background-color: rebeccapurple;
     text-align: center;
