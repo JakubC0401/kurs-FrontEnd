@@ -20,6 +20,20 @@
     box-sizing: border-box;
     padding: 20px;
 }
+#menu{
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    margin: 1px;
+    background-color: rgb(64, 78, 160);
+}
+#menu a{
+    
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
 #middle{
     background-color: #ececec;
     margin:0 auto;
