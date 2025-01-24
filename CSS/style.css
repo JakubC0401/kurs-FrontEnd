@@ -3,24 +3,27 @@
 
 }
 #container{
-    
-    position: relative;
-    background-color: rgb(49, 44, 71);
+  
     width: 100%;
-    padding: 20px 0 20px 0;
     margin: 0 auto;
-}
-#container h1{
-    top:80px;
-    left:35%;
-    position: absolute;
-    color: white;
-    font-size: 50px;
-    text-align: center;
 }
 #container address{
     color: white;
     position: absolute;
     right: 20px;
     top: 20px;
+    padding: 50px;
 }
+#top{
+    position: relative;
+    background-color: rgb(49, 44, 71);
+    box-sizing: border-box;
+    padding: 20px;
+}
+#middle{
+    background-color: #ececec;
+    margin:0 auto;
+    padding: 30px;
+
+}
+
