@@ -1,10 +1,10 @@
 *{
     margin: 0;
-
+    scroll-behavior: smooth;
 }
 #container{
   
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 #container address{
@@ -25,5 +25,30 @@
     margin:0 auto;
     padding: 30px;
 
+}
+#bottom{
+    
+    text-align: center;
+}
+#scroll-up{
+
+    background-color: rgba(0, 255, 255, 0.212);
+    position: fixed;
+    padding: 10px;
+    border-radius: 20%;
+    cursor: pointer;
+    right: 10px;
+    bottom: 10px;
+    margin: 10px;
+
+}
+#scroll-up a{
+    text-decoration: none;
+    color: black;
+}
+#scroll-up:hover{
+    color: gray;
+    background-color: aqua;
+    padding: 11px;
 }
 
