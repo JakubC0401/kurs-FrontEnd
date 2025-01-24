@@ -2,36 +2,16 @@
     margin: 0;
 
 }
+span{
+    position: fixed;
 
-:root{
-    --container-width: 900px; /*zmienna globalna*/
+    right: 10px;
+    bottom: 10px;
 }
-#container{
-    margin: 0 auto;
-    background-color: rgba(255, 0, 0, 0.39);
-    display: block;
-
-    width: var(--container-width);
-}
-.link{
-
-    --padding-size: 15px;
-    --border-left-size: 3px;
-    --margin-left-size: 20px;
-
-    padding: var(--padding_size);
-    border-left: var(--border-left-size) solid gainsboro;
-    margin-left: var(--margin-left-size);
-
-    width: calc(var(--container-width)/6 - var(--margin-left-size));
-
-    box-sizing: border-box;
-    display: inline-block;
-    background-color: rebeccapurple;
-    text-align: center;
-    
-}
-.sample{
-    background-color: red;
-    width: var(--container-width);
+#menu_bottom{
+    width: 100%;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
 }
