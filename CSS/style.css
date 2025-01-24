@@ -51,4 +51,11 @@
     background-color: aqua;
     padding: 11px;
 }
+#image{
+    float: right;
+    margin: 20px;
+}
+p{
+    text-align: justify;
+}
 
