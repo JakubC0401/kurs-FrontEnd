@@ -3,6 +3,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+:root{
+    --dropdown_before_height: 10px;
+    --dropdown_before_top: -10px;
+}
 #container{
   
     width: 80%;
@@ -101,10 +105,10 @@ p{
 .dropdown::before{
     content: "";
     border-bottom-color: aqua;
-    height: 10px;
+    height: var(--dropdown_before_height);
     width: 100%;
     position: absolute;
-    top:-10px;
+    top: var(--dropdown_before_top);
     
 }
 .dropdown a{
