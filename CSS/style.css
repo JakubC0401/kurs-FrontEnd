@@ -20,7 +20,25 @@ body{
     position: absolute;
     right: 20px;
     top: 20px;
-    padding: 50px;
+    padding: 70px;
+    
+    
+}
+#container address ul {
+    list-style: none;
+    
+}
+#container address ul li{
+    display: flex;
+    align-items: center;
+    
+}
+#container address svg{
+    margin-right: 5px;
+}
+#container address div{
+    display:inline-block;
+
 }
 #top{
     position: relative;
@@ -117,10 +135,13 @@ p{
 }
 .dropdown a{
     background-color: rgb(64, 78, 160);
-    display: block;
-    padding: 20px;
-    text-align: center;
+    display: flex;
     width: 140px;
+    padding: 20px;
+    align-items: center;
+}
+.dropdown a svg{
+    margin-right: 10px;
 }
 .dropdown a:hover{
     background-color: rgb(49, 44, 71, 0.9);
