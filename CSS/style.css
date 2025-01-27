@@ -8,12 +8,14 @@
     font-size: 20px;
 }
 #container{
-    display:grid;
+    display: grid;
+
     grid-template-areas: "header header header"
+    "nav article aside"
     "nav article aside"
     "footer footer footer";
 
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 2fr 1fr 5fr 1fr;
     grid-template-columns: 0.5fr 5fr 1fr;
 
     text-align: center;
@@ -32,6 +34,26 @@
 #container footer{
     grid-area: footer;
 }
-#container div{
+#container aside{
+    grid-area: aside;
+}
+@media (max-width:900px){
+    #container aside{
+        display: none;
+    }
 
+    #container{
+        display:grid;
+
+        grid-template-areas: "header header header" 
+        "nav nav nav"
+        "article article article"
+        "footer footer footer";
+    
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+        grid-template-columns: 1fr;
+    
+        text-align: center;
+        
+    }
 }
