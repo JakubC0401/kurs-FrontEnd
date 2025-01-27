@@ -3,6 +3,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+body{
+    margin-bottom: 100px;
+}
 :root{
     --dropdown_before_height: 10px;
     --dropdown_before_top: -10px;
@@ -53,6 +56,7 @@
     right: 10px;
     bottom: 10px;
     margin: 10px;
+    z-index: 1;
 
 }
 #scroll-up a{
@@ -121,3 +125,40 @@ p{
 .dropdown a:hover{
     background-color: rgb(49, 44, 71, 0.9);
 }
+
+/*informacje na dole strony */
+#footer{
+    background-color: rgb(64, 78, 160);
+    padding: 30px;
+    width: 77%;
+    margin: 0 auto;
+    text-align: center;
+}
+#cookie-info{
+    background-color: rgba(128, 128, 128, 0.904);
+    padding: 20px;
+    position:fixed;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    text-align: center;
+
+}
+#cookie-info div{
+    
+
+    width: 70%;
+    margin: 0 auto;
+}
+
+#x-button{
+    background-color: rgb(65, 65, 65);
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    right: 150px;
+    bottom:10px;
+    position: fixed;
+}
+
