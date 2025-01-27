@@ -155,6 +155,10 @@ p{
     margin: 0 auto;
     text-align: center;
 }
+#footer span{
+    color: white;
+    font-style: italic;
+}
 #cookie-info{
     background-color: rgba(128, 128, 128, 0.904);
     padding: 20px;
@@ -182,4 +186,6 @@ p{
     bottom:10px;
     position: fixed;
 }
-
+#x-button:hover{
+    background-color: rgb(145, 145, 145);
+}
