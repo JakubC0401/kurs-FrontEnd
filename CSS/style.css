@@ -40,7 +40,7 @@ body{
     background-color: #ececec;
     margin:0 auto;
     padding: 30px;
-
+    overflow: scroll;
 }
 #bottom{
     
