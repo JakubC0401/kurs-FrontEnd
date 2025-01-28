@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    
 }
 body{
     background-color: rgb(2,21, 38);
@@ -83,18 +84,22 @@ body{
 
 #middle-menu{
     
+    
     background-color: rgb(110, 172, 218);
     border-radius: 5px;
-    top: 267px;
+    top: 272.5px;
     left: -14px;
     width: 1710px;
     height: 35px;
     padding: 10px;
     margin: 0 auto;
     position: relative;
-
+    z-index: 1;
+    
+    
 }
 #middle-menu  ul li{
+    
     list-style-type: none;
     float: left;
     text-align: center;
@@ -107,6 +112,7 @@ body{
 #middle-menu  ul li:hover{
     padding: 6px;
     background-color: rgb(128, 128, 128);
+    padding-bottom: 20px;
 }
 #middle-menu  ul li a{
     font-family: "Roboto Condensed", serif;
@@ -123,24 +129,125 @@ body{
 #link{
     margin-top: 20px;
     display: block;
+    z-index: 0;
+    
 }
 /*slider menu START */
+#first-level-menu{
+    z-index: 9999;
+}
 #first-level-menu li .second-level-menu{
     display: none;
+    z-index: 9999;
+    
 }
 #first-level-menu li:hover .second-level-menu{
     display: block;
     width: 210px;
+    z-index: 9999;
     
 }
 #first-level-menu li .second-level-menu li{
     width: 170px;
     margin-top: 10px;
     text-align: center;
+    z-index: 9999;
 }
 
 #second-level-menu{
-    
+    z-index: 9999;
 }
 /*slider menu END */
+#text-container{
+    display: block;
+    width: 1730px;
+    height: 2000px;
+    right: 0px;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    z-index: -1;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-family: "Roboto Condensed", serif;
+}
+#element{
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(169, 239, 248);
+    text-align: justify;
+    margin-left: 50px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-top:10px;
+    width: 94%;
+    box-shadow: 0 6px 14px 0 rgba(0,0,0,0.2), 0 4px 18px 0 rgba(0,0,0,0.19);
+}
+#element h1{
+    margin: 10px 0 0 10px;
+}
+#element p{
+    margin: 10px 10px 10px 10px;
+    font-size: 24px;
+}
+#element img{
+    margin-top: 20px;
+    border-radius: 30px;
+    align-items: center;
+    margin-left: 30px;
+    height: 490px;
+    width: 490px;
+    box-shadow: 0 6px 14px 0 rgba(0,0,0,0.2), 0 4px 18px 0 rgba(0,0,0,0.19);
+    border: rgba(3, 51, 110, 0.329) solid 5px;
+}
+footer{
+
+    background-color: rgb(3, 51, 110);
+    width: 1630px;
+    padding: 30px 80px 20px 20px;
+    position:fixed;
+    bottom: 0;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+}
+footer img{
+    color: white;
+    background-color: white;
+    border-radius: 6px;
+    float: left;
+    margin-right: 10px;
+}
+#newsletter-header{
+    font-size: 27px;
+    font-weight: bold;
+}
+#text-newsletter{
+    font-family: "Roboto Condensed", serif;
+    text-align: left;
+    padding-top: -5px;
+    margin-bottom: 10px;
+}
+#form-newsletter{
+    margin-top: 5px;
+}
+.input_text{
+    background-color: rgb(212, 255, 241);
+    border-radius: 5px;
+    height: 25px;
+    margin-bottom: 2px;
+}
+.submit_button{
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100px;
+}
+#newsletter_info{
+    margin-top: 10px;
+}
 /*END middle section of site */
