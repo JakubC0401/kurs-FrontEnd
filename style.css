@@ -124,4 +124,23 @@ body{
     margin-top: 20px;
     display: block;
 }
+/*slider menu START */
+#first-level-menu li .second-level-menu{
+    display: none;
+}
+#first-level-menu li:hover .second-level-menu{
+    display: block;
+    width: 210px;
+    
+}
+#first-level-menu li .second-level-menu li{
+    width: 170px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#second-level-menu{
+    
+}
+/*slider menu END */
 /*END middle section of site */
