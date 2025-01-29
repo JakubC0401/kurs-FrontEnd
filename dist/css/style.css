@@ -245,19 +245,7 @@ textarea {
   }
 }
 
-p{
-  background-color: red;
-  width: 500px;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
-.foo{
-  background-color: blue;
-}
-#foo{
-  background-color: green;
-}
+
 table th{
   background-color: orange;
   border: 1px solid goldenrod;
@@ -268,6 +256,15 @@ table td{
   border-top: 1px solid black;
 }
 div p {
-  background-color: aqua;
-  font-size: 30px;
+  font-weight: bold;
+}
+input[required]{
+  background-color: red;
+}
+a[href="twojastrona.pl"]{
+  background-color: gray;
+  text-decoration: none;
+}
+a[href*="twojastrona.pl"]{
+  background-color: darkcyan;
 }

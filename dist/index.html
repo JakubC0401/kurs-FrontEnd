@@ -25,7 +25,7 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p >Hello world! This is HTML5 Boilerplate.</p>
+  <p >SELEKTORY ATRYBUTÓW</p>
 
   <table>
     <tr>
@@ -33,57 +33,64 @@
       <th>Wyjaśnienie</th>
     </tr>
     <tr>
-      <td>p</td>
-      <td>wybierz wszystkie elementy o nazwie <b>p</b></td>
+      <td>input[required]</td>
+      <td>wybierz wszystkie elementy o tagu input które mają atrybut required</td>
     </tr>
     <tr>
-      <td>.foo</td>
-      <td>wybierz wszystkie elementy o class = <b>foo</b></td>
+      <td>[href="twojastrona.pl"]</td>
+      <td>wybierz wszystkie elementy które mają atrybut <b>href</b> równy <b>twojastrona.pl</b></td>
     </tr>
     <tr>
-      <td>#identyfikator</td>
-      <td>wybierz wszystkie elementy o id = <b>identyfikator</b></td>
+      <td>input[type="text"]</td>
+      <td>wybierz wszystkie elementy o nazwie tagu <b>input</b>, a atrybut <b>type</b> równy jest <b>text</b></td>
     </tr>
     <tr>
-      <td>*</td>
-      <td>wybierz wszystkie elementy na stronie</td>
+      <td>[href*="twojastrona.pl"]</td>
+      <td>wybierz wszystkie elementy które mają atrybut <b>href</b> w której wartości znajduje się gdziekolwiek <b>twojastrona.pl</b></td>
     </tr>
     <tr>
-      <td>div,p </td>
-      <td>wybierz wszystkie elementy <b>p</b> i <b>div</b></td>
+      <td>[id^ = "produkt-"] </td>
+      <td>wybierz wszystkie elementy które mają atrybut id o wartości rozpoczynającej się od <b>produkt-</b></td>
     </tr>
     <tr>
-      <td>div p.foo</td>
-      <td>wybierz wszystkie elementy o naziwe <b>p</b> których class = <b>foo</b></td>
+      <td>a[href^ = "https://"]</td>
+      <td>wybierz wszystkie elementy tagu <b>a</b> które mają atrybut <b>href</b> w której wartości znajduje się na początku <b>https://</b></td>
     </tr>
     <tr>
-      <td>div > p.foo</td>
-      <td>wybierz wszystkie elementy o nazwie <b>p</b> gdy class = <b>foo</b>, które są bezpośrednimi dziećmi elementu div</td>
+      <td>[href$=".jpg"]</td>
+      <td>wybierz wszystkie elementy które mają atrybut href o wartości kończącej się na <b>.jpg</b></td>
     </tr>
     <tr>
-      <td>div + p.foo</td>
-      <td>wybierz wszystkie elementy o nazwie <b>p</b> gdy class = <b>foo</b>, które są dokładnie obok (po) elemencie div. Inaczej, jeżeli dokładnie po div, będzie p.foo to zastosuj na tym elemencie i tylko tym poniższy styl - TO JEST WARUNEK</td>
+      <td>[lang|=en]</td>
+      <td>wybierz wszystkie elementy które mają atrybut <b>lang</b> o wartości en lub też jest połączony z innym słowem przy pomocy myślnika (-)</td>
     </tr>
     <tr>
-      <td>div ~ p.foo</td>
-      <td>To samo co wyżej tylko, że wybiera wszystkie elementy p.foo sąsiadujące po div (muszą być na tym samym poziomie hierarchi).</td>
+      <td>[data-filetype="obrazek"]</td>
+      <td>wybierz wszystkie elementy które mają atrybut <b>data-filetype</b> o wartości równej obrazek</td>
+    </tr>
+    <tr>
+      <td>a[data-info~="external"]</td>
+      <td>wybierz wszystkie elementy których tag nazywa się na a oraz które mają atrybut <b>data-info</b> oraz jedną z wartości data-info jest <b>external</b></td>
     </tr>
   </table>
   <script src="js/app.js"></script>
 
-  <p>to jest jakiś tekst</p>
+   <div>
+    <p><b>^</b> - rozpoczyna się od..</p>
+    <p><b>*</b> - zawiera w sobie..</p>
+    <p><b>$</b> - kończy się na..</p>
+   </div>
 
-  <p class = "foo">
-    element o klasie <b>foo</b>
-  </p>
+   <input type="text" required>
+   <input type="text" required>
+   <input type="text" required>
+   <input type="text" required>
+   <input type="text">
+   <p required>p z required</p>
 
-  <p id="foo">
-    element o id foo
-  </p>
-
-  <div>
-    <p>to jest element <b>p</b> znajdujący się w div</p>
-  </div>
+   <a href="twojastrona.pl">link do twojastrona.pl</a>
+   <a> bez linku do twojastrona.pl</a>
+   <a href="forum-twojastrona.pl">forum-twojastrona.pl</a>
   <hr>
 </body>
 
