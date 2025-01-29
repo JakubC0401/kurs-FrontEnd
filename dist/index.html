@@ -26,7 +26,64 @@
 
   <!-- Add your site or application content here -->
   <p >Hello world! This is HTML5 Boilerplate.</p>
+
+  <table>
+    <tr>
+      <th>Selektory</th>
+      <th>Wyjaśnienie</th>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>wybierz wszystkie elementy o nazwie <b>p</b></td>
+    </tr>
+    <tr>
+      <td>.foo</td>
+      <td>wybierz wszystkie elementy o class = <b>foo</b></td>
+    </tr>
+    <tr>
+      <td>#identyfikator</td>
+      <td>wybierz wszystkie elementy o id = <b>identyfikator</b></td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>wybierz wszystkie elementy na stronie</td>
+    </tr>
+    <tr>
+      <td>div,p </td>
+      <td>wybierz wszystkie elementy <b>p</b> i <b>div</b></td>
+    </tr>
+    <tr>
+      <td>div p.foo</td>
+      <td>wybierz wszystkie elementy o naziwe <b>p</b> których class = <b>foo</b></td>
+    </tr>
+    <tr>
+      <td>div > p.foo</td>
+      <td>wybierz wszystkie elementy o nazwie <b>p</b> gdy class = <b>foo</b>, które są bezpośrednimi dziećmi elementu div</td>
+    </tr>
+    <tr>
+      <td>div + p.foo</td>
+      <td>wybierz wszystkie elementy o nazwie <b>p</b> gdy class = <b>foo</b>, które są dokładnie obok (po) elemencie div. Inaczej, jeżeli dokładnie po div, będzie p.foo to zastosuj na tym elemencie i tylko tym poniższy styl - TO JEST WARUNEK</td>
+    </tr>
+    <tr>
+      <td>div ~ p.foo</td>
+      <td>To samo co wyżej tylko, że wybiera wszystkie elementy p.foo sąsiadujące po div (muszą być na tym samym poziomie hierarchi).</td>
+    </tr>
+  </table>
   <script src="js/app.js"></script>
+
+  <p>to jest jakiś tekst</p>
+
+  <p class = "foo">
+    element o klasie <b>foo</b>
+  </p>
+
+  <p id="foo">
+    element o id foo
+  </p>
+
+  <div>
+    <p>to jest element <b>p</b> znajdujący się w div</p>
+  </div>
   <hr>
 </body>
 

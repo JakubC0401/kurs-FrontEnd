@@ -246,8 +246,28 @@ textarea {
 }
 
 p{
-  width: 300px;
   background-color: red;
-  -webkit-border-radius:5px;
-  border-radius: 5px;
+  width: 500px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.foo{
+  background-color: blue;
+}
+#foo{
+  background-color: green;
+}
+table th{
+  background-color: orange;
+  border: 1px solid goldenrod;
+}
+table td{
+  padding: 10px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+div p {
+  background-color: aqua;
+  font-size: 30px;
 }
