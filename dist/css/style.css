@@ -245,3 +245,9 @@ textarea {
   }
 }
 
+p{
+  width: 300px;
+  background-color: red;
+  -webkit-border-radius:5px;
+  border-radius: 5px;
+}
