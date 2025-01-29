@@ -244,27 +244,125 @@ textarea {
     page-break-after: avoid;
   }
 }
-
-
-table th{
-  background-color: orange;
-  border: 1px solid goldenrod;
+/*my code */
+table{
+  margin: 10px;
+  border: solid #ccc 1px;
+  width: 900px;
+  padding: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-table td{
-  padding: 10px;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-}
-div p {
+table tr td:first-child{
   font-weight: bold;
+  width: 250px;
 }
-input[required]{
-  background-color: red;
+table tr:hover{
+  background-color: rgba(200,200,200,0.7);
 }
-a[href="twojastrona.pl"]{
-  background-color: gray;
-  text-decoration: none;
+.example{
+  display: none;
 }
-a[href*="twojastrona.pl"]{
-  background-color: darkcyan;
+table tr:hover .example{
+  display: block;
+}
+textarea.przykladowy_kod{
+  width: 500px;
+  height: 150px;
+}
+
+
+/*radio buttons */
+label{
+  padding: 5px;
+}
+/*radio button checked */
+input[type='radio']:checked + label{
+
+  color: green;
+  font-weight: bold;
+
+}
+/*end of radio buttons */
+
+/*input text */
+input[type='text']{
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.9em;
+  color: #666;
+  margin: 10px;
+}
+
+input[type='text']:focus{
+  border-width: 2px;
+  border-color: teal;
+  padding: 4px;
+  outline: 0;
+  color: #111;
+}
+/*end of input text */
+
+/*tooltip-after */
+[data-tooltip]{
+  cursor: help;
+  position: relative;
+  border-bottom: 1px dotted orange;
+}
+[data-tooltip]:hover{
+  
+}
+[data-tooltip]:hover::after{
+  content: attr(data-tooltip);
+  min-width: 100px;
+  background-color: rgba(50,150,150,0.9);
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 1000;
+  color: #b3d4fc;
+}
+/*end of tooltip-after */
+
+/* download:before*/
+
+.download::before{
+  content: url("../img/download.gif");
+  margin-right: 5px;
+  width: 28px;
+  height: 28px;
+}
+.download:hover::before{
+  content: url("../img/download_hover.gif");
+}
+/* end of download:before*/
+
+/* table edit*/
+caption{
+  margin-bottom: 5px;
+}
+table tr{
+  margin: 2px;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+}
+table tr:nth-child(odd){
+  background-color: #f5f5f5;
+}
+table tr td:first-child{
+  font-weight: bold;
+  width: 250px;
+}
+
+table tr td, table tr th{
+  padding: 8px;
+}
+/* end of table edit*/
+
+.example span:only-child(span){
+  color: red;
 }
