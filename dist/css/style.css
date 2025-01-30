@@ -248,22 +248,11 @@ textarea {
 /*-------------------- my code -------------------- */
 
 #container{
-
+background-color: rgba(204,204,204,0.5);
+width: 500px;
+padding: 15px;
+font-size: 10px;
+background: linear-gradient(#fff, #000);
 
 }
 
-div #putshadow{
-  box-shadow: 0 3px 5px red;
-  width: 300px;
-  height: 300px;
-  background-color: teal;
-  color: white;
-}
-#putshadow{
-
-  text-shadow: 0 1px 0 #ccc ;
-}
-
-h1{
-  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
-}
