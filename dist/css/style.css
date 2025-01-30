@@ -247,7 +247,7 @@ textarea {
 
 /*-------------------- my code -------------------- */
 
-#container{
+.container{
 background-color: rgba(204,204,204,0.5);
 width: 70px;
 padding: 15px;
@@ -261,34 +261,16 @@ border: solid black 1px;
 
 transition: all  1s cubic-bezier(.17,.67,.89,.27);
 }
-#container:hover{
+.container:hover{
   
   cursor: pointer;
   color: rgb(58, 58, 58);
   opacity: 0.6;
-  transition: 1s;
-}
-
-#container2{
-  background-color: rgba(204,204,204,0.5);
-  width: 70px;
-  padding: 15px;
-  font-size: 12px;
-  background: linear-gradient(orange, yellow);
-  border-radius: 5px;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
-  border: solid black 1px;
   
-  transition: all  0.5s linear 3s;
-  }
-  #container2:hover{
-    
-    cursor: pointer;
-    color: rgb(58, 58, 58);
-    opacity: 0.6;
-    transition: 0.5s;
+}
+  .container_clicked{
+    margin-left: 400px;
+    transform: skew(30deg,30deg)
   }
 
   #cube-container{
