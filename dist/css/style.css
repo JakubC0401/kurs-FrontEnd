@@ -247,51 +247,51 @@ textarea {
 
 /*-------------------- my code -------------------- */
 
-.container{
-background-color: rgba(204,204,204,0.5);
-width: 70px;
-padding: 15px;
-font-size: 12px;
-background: linear-gradient(#fff, #000);
-border-radius: 5px;
-text-align: center;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #b3d4fc;
-border: solid black 1px;
-
-transition: all  1s cubic-bezier(.17,.67,.89,.27);
+div.zakladka
+{
+    background-color: rgba(204,204,204, 0.5);
+    width: 70px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;    
+    background:  linear-gradient(to bottom, rgba(145,195,242,1) 0%, rgba(136,167,200,0.79) 71%, rgba(136,167,200,0.7) 100%);
+    border-radius: 99px 20px 99px 20px;
+    animation: obracanie2 1s 3s infinite;
+    -pie-background:  linear-gradient(rgba(145,195,242,1) 0%, rgba(136,167,200,0.79) 71%, rgba(136,167,200,0.7) 100%);
+    behavior: url("PIE.htc");     
 }
-.container:hover{
-  
-  cursor: pointer;
-  color: rgb(58, 58, 58);
-  opacity: 0.6;
-  
+.zakladka.stopAnimation{
+  animation-play-state: paused !important;
 }
-  .container_clicked{
-    margin-left: 400px;
-    transform: skew(30deg,30deg)
-  }
+.zakladka:hover
+{
+    cursor: pointer;
+    color: teal;
+    opacity: 0.6;
+}
 
-  #cube-container{
-    width: 300px;
-    height: 50px;
-    background-color: gray;
-    border-radius: 10px;
+@keyframes obracanie {
+  from{
+    transform: rotate(0deg);
   }
-  .cube{
-    width: 50px;
-    height: 50px;
-    background-color: aqua;
-    transition: ease-in 1s;
-    border-radius: 10px;
+  to{
+    transform: rotate(360deg);
   }
-  #cube-container:hover .cube{
-    transition: 1s;
-    margin-left: 250px;
-    background-color: gray;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    border: solid 1px rgb(51, 51, 51);
+}
+
+@keyframes obracanie2{
+  0%{
+    opacity: 1;
   }
+  30%{
+    transform: rotate(180deg);
+    opacity: 0.2;
+  }
+  50%{
+    transform:translate(30px,10px) ;
+  }
+  100%{
+    transform: rotate(360deg);
+    opacity: 0.4;
+  }
+}

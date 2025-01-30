@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-    $("container").click(function(){
-        $(this).toggleClass("container_clicked")
+    $("stopResumeAnimation").click(function(){
+        $(".zakladka").toggleClass(".stopAnimation")
     });
 });

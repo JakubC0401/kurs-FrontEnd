@@ -20,24 +20,47 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
+  
 </head>
 
 <body>
-
+  <script src="../js/app.js"></script>
   <!-- Add your site or application content here -->
-
-  <div class="container">
-    Zaloguj się
+  <div id="container">
+    <div class="zakladka">
+        Zaloguj się
+      </div>      
+      <br>
+      <button id="stopResumeAnimation">Zatrzymaj / Kontynuuj Animacje</button>
   </div>
-  <br>
+
+ <!--
+    none 0 ease 0 1 normal
+ 
+    nazwa czas_trwania funkcja_zmiany opoźnienie ilosc_powtorzen jak_powtarzac
+ 
+   funkcja_zmiany:
+   ease
+   ease-in
+   ease-out
+   ease-in-out
+ 
+   jak_powtarzac:
+   normal - tak jak określono
+   reverse- w drugą stronę
+   alternate - raz w jedną raz w drugą
+   alternate-reverse - jak wyżej tylko zaczynając od drugiej strony
+   
+ -->
+  
 
 
-  <div id="cube-container">
-    <div class="cube">
-    </div>
-    
-  </div>
-  <script src="js/app.js"></script>
+
+
+
+
+  
 </body>
 
 </html>
