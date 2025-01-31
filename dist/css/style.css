@@ -247,83 +247,17 @@ textarea {
 
 /*-------------------- my code -------------------- */
 
-#scene{
-  width: 200px;
-  height: 200px;
- 
-  margin: 140px;
-  perspective: 1000px;
-  position: relative;
-
-}
-#cube{
-
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-
-  animation: cubeRotate 7s infinite alternate;
-}
-.side{
-  opacity: 0.6;
-  backface-visibility: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-
-  font-size: 50px;
-  font-weight: bold;
-  color: black;
-  text-align: center;
-  line-height: 200px;
-
-}
-div .front{
-  background-color: crimson;
-  transform: translateZ(100px);
-}
-div .back{
-  background-color: orange;
-  transform: rotateX(180deg) translateZ(100px);
-}
-div .left{
-  background-color: greenyellow;
-  transform: rotateY(-90deg) translateZ(100px);
-}
-div .right{
-  background-color: blue;
-  transform: rotateY(90deg) translateZ(100px);
-}
-div .top{
-  background-color: blueviolet;
-  transform: rotateX(90deg) translateZ(100px);
-}
-div .bottom{
-  background-color: teal;
-  transform: rotateX(-90deg) translateZ(100px);
-}
-
-@keyframes cubeRotate{
-  from{
-
-  }
-  to{
-    transform: rotateY(360deg) rotateX(360deg)
-  }
-}
-
-#test{
-  border: 5px dotted green;
-  padding: 20px;
-  text-align: center;
-  font-weight: bold;
-  color: red;
-  width: 300px;
-  height: 600px;
+body{
   margin: 20px;
-  background: no-repeat bottom url("../img/shattered-glass-texture.jpg"), no-repeat top url("../img/czaszka.png");
-  background-size: contain;
+}
+h1{
+  margin: 20px;
+}
+#test{
 
-  background-origin: padding-box;
+  margin: 40px;
+  column-count: 2;
+  column-gap: 150px;
+  text-align: justify;
+  column-rule: 2px black solid;
 }
