@@ -246,18 +246,36 @@ textarea {
 }
 
 /*-------------------- my code -------------------- */
-
 body{
-  margin: 20px;
+  margin: 0 0;
 }
-h1{
-  margin: 20px;
-}
-#test{
+#container{
 
-  margin: 40px;
-  column-count: 2;
-  column-gap: 150px;
-  text-align: justify;
-  column-rule: 2px black solid;
+  height: 500px;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  /*justify-content działa względem tego co jest w flex-direction
+    align-items działa w przeciwną stronę niż flex direction
+  */ 
+}
+#container div{
+  
+  width: 300px;
+  min-height: 100px;
+}
+#one{
+  flex: 1 1 auto;
+  background-color: blue;
+}
+#two{
+  flex: 1 1 auto;
+  background-color: yellow;
+}
+#three{
+  flex: 1 1 auto;
+  background-color: green;
 }
