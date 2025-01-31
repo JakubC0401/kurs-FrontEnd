@@ -250,41 +250,23 @@ body{
   margin: 0 0;
 }
 /*animate button */
-#button_link{
-
-  display: table;
-  width: 300px;
-
-  margin: 50px auto;
-  text-align: center;
-
-  perspective: 600px;
-}
-
-#button_link a{
-  opacity: 0.8;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#menu a{
   text-decoration: none;
-  padding: 30px;
-  background: rgb(0,254,255);
-  background: linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(95,242,204,1) 35%, rgba(0,212,255,1) 100%);
-  transition: 0.2s;
-  box-shadow: 0px 3px 0px 0px rgba(55, 218, 218, 1), 0px 10px 10px rgba(0, 0, 0, 0.7);
-  display: block;
-  transform: rotateX(10deg);
 
 }
-#button_link a:hover{
-  opacity: 1;
-  transform: rotateX(20deg);
+#menu ul{
+  list-style: none;
 }
-
-#button_link a:active{
-  box-shadow: 0px 3px 0px 0px rgba(55, 218, 218, 1), 0px 3px 6px rgba(0, 0, 0, 0.5);
-  position: relative;
-  top: 3px;
+#menu > li{
+  list-style: none;
+  float: left;
+}
+#main_menu 
+{
+  border: 1px solid black;
+  padding: 10px;
+  background-color: red;
+}
+#main_menu a{
+  background-color: white;
 }
