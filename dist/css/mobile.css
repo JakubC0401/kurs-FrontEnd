@@ -1,0 +1,42 @@
+#middle-flow{
+    flex-direction: column;
+   
+}
+#container{
+    margin-top: 0;
+    border: 1px solid black;
+  
+  }
+  
+  #container > *{
+  
+    min-height: 100px;
+  }
+  #middle-flow{
+    display: flex;
+    margin: 10px 0;
+  }
+  nav{
+    flex: 1 0 0;
+    background-color: blue;
+  }
+  header{
+    background-color: green;
+  }
+  header h1{
+    margin-top: 0;
+  }
+  article{
+    text-align: justify;
+    margin: 0 10px;
+    flex: 7 0 0;
+    background-color: yellow;
+  }
+  aside{
+    flex: 1 0 0;
+  
+    background-color: teal;
+  }
+  footer{
+    background-color: red;
+  }
