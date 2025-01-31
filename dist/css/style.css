@@ -250,32 +250,40 @@ body{
   margin: 0 0;
 }
 #container{
-
-  height: 500px;
-  display: flex;
+  margin-top: 0;
   border: 1px solid black;
-  flex-direction: row;
 
-  flex-wrap: wrap;
-
-  /*justify-content działa względem tego co jest w flex-direction
-    align-items działa w przeciwną stronę niż flex direction
-  */ 
 }
-#container div{
-  
-  width: 300px;
+
+#container > *{
+
   min-height: 100px;
 }
-#one{
-  flex: 1 1 auto;
+#middle-flow{
+  display: flex;
+  margin: 10px 0;
+}
+nav{
+  flex: 1 0 0;
   background-color: blue;
 }
-#two{
-  flex: 1 1 auto;
+header{
+  background-color: green;
+}
+header h1{
+  margin-top: 0;
+}
+article{
+  text-align: justify;
+  margin: 0 10px;
+  flex: 7 0 0;
   background-color: yellow;
 }
-#three{
-  flex: 1 1 auto;
-  background-color: green;
+aside{
+  flex: 1 0 0;
+
+  background-color: teal;
+}
+footer{
+  background-color: red;
 }
