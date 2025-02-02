@@ -2,16 +2,32 @@
 /*FUNKCJE
 
 
-
-*/
-var a = 6;
-
-function test(){
-    alert(a);
-    a = 2;
-
+function test(f){
+    f(y+10);
 }
 
-test();
+test(function(x) {
+    alert("coś tam coś" + x);
+});
+*/
 
-alert(a);
+
+var hi = function(type)
+{
+    if(type ==="szef")
+    
+        return function(name)
+        {
+            alert("cześć szefie " + name +" !");
+        };
+    else{
+        return function(name){
+            alert("Cześć" + name + " !");
+        };
+    }
+}
+
+
+var zwroconaFunkcja = hi("szef");
+
+zwroconaFunkcja("Arek");
