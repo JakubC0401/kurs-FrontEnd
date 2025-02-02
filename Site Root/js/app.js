@@ -1,39 +1,27 @@
 
-/*OPERATORY ARYTMETYCZNE
+/*OPERATORY RELACYJNE
+=       -       przypisanie wartości
 
-    +   -   Dodawanie/Łączenie dwóch stringów
-    -   -   Odejmowanie
-    *   -   mnożenie
-    /   -   dzielenie
+==      -       porównanie
+!=      -       brak równości, wartości lewa/prawa są różne od siebie
 
-    %   -   reszta z dzielenia
+>       -       lewa większa od prawej
+<       -       prawa większa od lewej
+
+>=      -       lewa większa lub równa od prawej
+<=      -       prawa większa lub równo od lewej
 
 
-    +=  -   przypisanie wartości
-    dla x =3 
-    x+=3    -  wartość będzie 6
-    
-    ++x - preinkrementacja - dodaje 1 do x - najpierw będzie dodanie, potem jakaś funkcja
-    x++ - postinkrementacja - dodaje 1 do x - najpierw będzie funkcja potem dodanie
 
-    
 
-*/
-/*
-typy zmiennych:
 
-1) liczby - number
-2) ciąg znaków - string
-3) wartości logiczne - true/false
-4) tablice,obiekty - ....
-5) null - pusta wartość
-6) undefined - niezdefiniowana
+KAŻDY OPERATOR ZWRACA TRUE/FALSE
 
 
 
 */
 
-var x = 10;
-var y = 5;
+var a = 3;
+var b = 6;
 
-alert(x%y);
+alert(a <= b);
