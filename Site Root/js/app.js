@@ -1,20 +1,50 @@
 
-/*INSTRUKCJE WARUNKOWE
+/*FUNKCJE
 
 
 
 */
 
-var a = 5;
-var b = 7;
-if(a < b){
-    alert("a jest mniejsze od b");
+function add(x, y){
+    
+    return x + y;
 }
-else if(a > b){
-    alert("a jest większe od b");
+
+function minus(x, y){
+    
+    return x - y;
 }
-else{
-    alert("a: "+ a);
-    alert("b: "+ b);
-    alert("coś innego");
+function divide(x, y){
+
+    if(y != 0){
+
+        return x / y;
+    }
+    else{
+        return "nie dziel przez 0!"
+    }
+    
 }
+
+function poleTrojkata(wysokoscT, dlugoscPodstawy){
+    
+    poleT = (wysokoscT*dlugoscPodstawy)/2;
+
+    return poleT;
+}
+
+var a = add(10,2);
+
+var b = minus(10,8);
+
+var c = divide(10,5);
+
+var d = divide(10,0);
+
+var e = divide(7, 3);
+
+alert(a);
+alert(b);
+alert(c);
+alert(d);
+alert(e);
