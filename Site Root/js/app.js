@@ -1,22 +1,12 @@
 
-/*OPERATORY RELACYJNE
-=       -       przypisanie wartości
+/*OPERATORY LOGICZNE
 
-==      -       porównanie
-!=      -       brak równości, wartości lewa/prawa są różne od siebie
+!   -   negacja
 
->       -       lewa większa od prawej
-<       -       prawa większa od lewej
-
->=      -       lewa większa lub równa od prawej
-<=      -       prawa większa lub równo od lewej
+&&  -   koniunkcja "I" - W TYM SAMYM MOMENCIE SPEŁNIONE, jest 1 tylko wtedy gdy oba są prawdziwe
 
 
-
-
-
-KAŻDY OPERATOR ZWRACA TRUE/FALSE
-
+||  -   alternatywa "LUB" - pierwsze lub drugie jest prawdziwe wtedy 1. Jest fałszywa tylko wtedy gdy oba są fałszywe.
 
 
 */
@@ -24,4 +14,7 @@ KAŻDY OPERATOR ZWRACA TRUE/FALSE
 var a = 3;
 var b = 6;
 
-alert(a <= b);
+if(a > b || a == 3)
+    alert("tak")
+else
+    alert("nie");
