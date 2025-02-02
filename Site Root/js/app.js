@@ -1,19 +1,24 @@
 
-var nazwaZmiennej; //variable - etykieta(nazwa zmiennej) <- deklaracja zmiennej
+/*OPERATORY ARYTMETYCZNE
 
-nazwaZmiennej = 5; //przypisanie wartości
+    +   -   Dodawanie/Łączenie dwóch stringów
+    -   -   Odejmowanie
+    *   -   mnożenie
+    /   -   dzielenie
 
-var vat_pl = (1 + 23 * 1/100);
+    %   -   reszta z dzielenia
 
-var cenaNettoJava = 39;
-var cenaNettoAjax = 34;
 
-var cenaBruttoJava = cenaNettoJava * vat_pl;
-var cenaBruttoAjax = cenaNettoAjax * vat_pl;
+    +=  -   przypisanie wartości
+    dla x =3 
+    x+=3    -  wartość będzie 6
+    
+    ++x - preinkrementacja - dodaje 1 do x - najpierw będzie dodanie, potem jakaś funkcja
+    x++ - postinkrementacja - dodaje 1 do x - najpierw będzie funkcja potem dodanie
 
-alert(cenaBruttoJava +" zł");
-alert(cenaBruttoAjax + " zł");
+    
 
+*/
 /*
 typy zmiennych:
 
@@ -23,4 +28,12 @@ typy zmiennych:
 4) tablice,obiekty - ....
 5) null - pusta wartość
 6) undefined - niezdefiniowana
+
+
+
 */
+
+var x = 10;
+var y = 5;
+
+alert(x%y);
