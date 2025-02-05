@@ -34,7 +34,7 @@ function Person(name, surname, age){  ///konstruktor klasy Person
     this.age = age
 
     this.toString = function(){
-       return this.name + " " + this.surname + " " + this.age;
+       return this.name + " " + this.surname + " " + this.age + " " + this.specifiedValue;
     };
 };
 
@@ -42,6 +42,9 @@ var x = new Person("Adrian", "Kowalski", 45);
 var y = new Person("John","Doe",32);
 var z = new Person("Krystyna","Kamionka",65);
 
-myDiv.innerHTML = x + "<br>" + y + "<br>" + z; //działa bo nadpisałem domyślny toString();
+Person.prototype.specifiedValue = 12;
+//x.specifiedValue = 12;
+
+myDiv.innerHTML = x + "<br>" + y + "<br>" + z; 
 
 
