@@ -1,33 +1,44 @@
 
-/*FUNKCJE
+/*
 
-
-function test(f){
-    f(y+10);
-}
-
-test(function(x) {
-    alert("coś tam coś" + x);
-});
+OBIEKT - to pojemnik do przechowywania zmiennych i funkcji tematycznie ze sobą  związanych do dalszego łatwiejszego ponownego użycia.
 */
 
 
-var hi = function(type)
-{
-    if(type ==="szef")
-    
-        return function(name)
-        {
-            alert("cześć szefie " + name +" !");
-        };
-    else{
-        return function(name){
-            alert("Cześć" + name + " !");
-        };
+var myDiv = document.getElementById("test");
+
+myDiv.innerHTML = "nowa treść zmienona w JS";
+
+var personObject = {
+    name:"John",
+    surname:"Doe",
+    age: 46,
+    downloadInformation: function()
+    {
+        return this.name + " " + this.surname +" "+ this.age;
+    },
+
+    toString: function()
+    {
+        return this.name + " "+this.surname; //nadpisanie domyślnej metody toString()
     }
-}
 
+};
 
-var zwroconaFunkcja = hi("szef");
+myDiv.innerHTML = personObject; //działa pod nadpisałem domyślny toString();
+/*
+var osoba = new Object({
+    name:"John",
+    surname:"Doe",
+    age: 46,
+    downloadInformation: function()
+    {
+        return this.name + " " + this.surname +" "+ this.age;
+    },
 
-zwroconaFunkcja("Arek");
+    toString: function()
+    {
+        return this.name + " "+this.surname; //nadpisanie domyślnej metody toString()
+    }
+})
+*/
