@@ -9,12 +9,17 @@ var tabProducts = [
 ];
 
 
+var elements = document.getElementById("kurs_programowania").getElementsByTagName("li");
 
-for(i=0; i < 5; i++){
+for(var i = 0; i < elements.length; i++)
+{
+    if(i % 2 == 0)
+    {
+        elements[i].innerHTML = "nieparzysty: " + elements[i].innerHTML;
+    }
+    else
+    {
+        continue;
+    }
 
-    
-  document.getElementById("result").innerHTML += i + "<br>";
-
-
-};
-
+}
