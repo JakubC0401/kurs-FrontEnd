@@ -1,12 +1,6 @@
 
 /*
 
-
-TAB
-
--------------------------------------------------
-| [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]  |
--------------------------------------------------
 */
 
 //tablica w JS jest obiektem - ma swoje właściwości i funkcje.
@@ -15,30 +9,47 @@ var tabProducts = [
     "PHP",
     "MySql",
     "HTML",
-    "js"
+    "js",
+    "PDO",
+    "AJAX"
 ];
 
-alert(tabProducts[0]); //odwołanie do pierwszego elementu tablic -- "PHP"....
 
-tabProducts[4] = "PDO"; //dodanie elementu do tablicy
+/*
+var result = document.getElementById("result");
 
-alert(tabProducts.length);
+var i = 0;
+while(i < tabProducts.length)
+{
 
+    result.innerHTML += tabProducts[i] + "<br>";
+    i++;
+};
+*/
 
-var array1 = new Array(); //drugi sposób tworzenia tablic w JS
+/*
 
+var i = 0;
 
-//ASSOCIATIVE ARRAYS - przyporządkowanie wartości -> klucz - wartość
+do
+{
 
-var osoba = [];
+    alert(i)
+    i++;
 
-osoba["imie"] = "Arek";
+}while(i < tabProducts.length)
 
-alert(osoba["imie"]);
+*/
 
+var result = document.getElementById("result");
 
-var kurs_programowania_UL = document.getElementById("kurs_programowania");
+var kursy_programowania = document.getElementById("kurs_programowania").getElementsByTagName("li");
 
-var kurs_programowania_LI = kurs_programowania_UL.getElementsByTagName("li");
+var i = 0;
+while(i < kursy_programowania.length){
 
-alert(kurs_programowania_LI[0].innerHTML + " "+ kurs_programowania_LI[1].innerHTML);
+    
+    result.innerHTML += kursy_programowania[i].innerHTML + "<br>";
+    i++;
+};
+
