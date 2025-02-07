@@ -1,50 +1,44 @@
 
 /*
 
-OBIEKT - to pojemnik do przechowywania zmiennych i funkcji tematycznie ze sobą  związanych do dalszego łatwiejszego ponownego użycia.
+
+TAB
+
+-------------------------------------------------
+| [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]  |
+-------------------------------------------------
 */
 
+//tablica w JS jest obiektem - ma swoje właściwości i funkcje.
 
-var myDiv = document.getElementById("test");
+var tabProducts = [
+    "PHP",
+    "MySql",
+    "HTML",
+    "js"
+];
 
-myDiv.innerHTML = "nowa treść zmienona w JS";
+alert(tabProducts[0]); //odwołanie do pierwszego elementu tablic -- "PHP"....
 
-/*
-var personObject = {
-    name:"John",
-    surname:"Doe",
-    age: 46,
-    downloadInformation: function()
-    {
-        return this.name + " " + this.surname +" "+ this.age;
-    },
+tabProducts[4] = "PDO"; //dodanie elementu do tablicy
 
-    toString: function()
-    {
-        return this.name + " "+this.surname; //nadpisanie domyślnej metody toString()
-    }
-
-};
-*/
-
-function Person(name, surname, age){  ///konstruktor klasy Person
-
-    this.name = name,
-    this.surname = surname,
-    this.age = age
-
-    this.toString = function(){
-       return this.name + " " + this.surname + " " + this.age + " " + this.specifiedValue;
-    };
-};
-
-var x = new Person("Adrian", "Kowalski", 45);
-var y = new Person("John","Doe",32);
-var z = new Person("Krystyna","Kamionka",65);
-
-Person.prototype.specifiedValue = 12;
-//x.specifiedValue = 12;
-
-myDiv.innerHTML = x + "<br>" + y + "<br>" + z; 
+alert(tabProducts.length);
 
 
+var array1 = new Array(); //drugi sposób tworzenia tablic w JS
+
+
+//ASSOCIATIVE ARRAYS - przyporządkowanie wartości -> klucz - wartość
+
+var osoba = [];
+
+osoba["imie"] = "Arek";
+
+alert(osoba["imie"]);
+
+
+var kurs_programowania_UL = document.getElementById("kurs_programowania");
+
+var kurs_programowania_LI = kurs_programowania_UL.getElementsByTagName("li");
+
+alert(kurs_programowania_LI[0].innerHTML + " "+ kurs_programowania_LI[1].innerHTML);
