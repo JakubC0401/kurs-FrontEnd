@@ -5,5 +5,19 @@
 // alert(programming_course[0].innerHTML)
 
 
-programming_course = document.querySelector("#kurs_programowania li")
-alert(programming_course.innerHTML)
+var programming_course = document.querySelectorAll("#kurs_programowania li");
+
+
+
+
+for(var index in programming_course){
+
+    programming_course[index].style.color = "red";
+
+};
+
+var web_courses = document.querySelectorAll("#kurs_tworzenia_stronWWW li");
+
+web_courses.forEach(function(element){
+    element.style.display = "none";
+});
