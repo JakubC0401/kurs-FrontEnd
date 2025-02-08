@@ -1,40 +1,13 @@
 
-var courses = [
-    "PHP",
-    "MySql",
-    "HTML",
-    "js",
-    "PDO",
-    "AJAX"
-];
+
+var programming_course = document.getElementById("kurs_programowania");
 
 
-var elements = document.getElementById("kurs_programowania").getElementsByTagName("li");
 
-for(var property in elements){
+programming_course.setAttribute("class","changeColor");
 
-    if(typeof(elements[property]) != "object"){
-        break;  
-    }
-    alert(elements[property].innerHTML);
+programming_course.removeAttribute("class");
 
-}
+alert(programming_course.childNodes[1].firstChild.textContent);
 
-// person = {
-//     name: "John",
-//     surname:"Doe",
-//     age: 26
-// };
-
-
-// for(var x in person){
-//     alert(person[x]);
-// }
-
-// var allCoursesString = "";
-
-// for(var course in courses){
-//     allCoursesString += courses[course];
-// }
-
-// alert(allCoursesString);
+programming_course.childNodes[1].firstChild.textContent = "something new";
