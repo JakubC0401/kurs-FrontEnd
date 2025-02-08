@@ -1,5 +1,5 @@
 
-var tabProducts = [
+var courses = [
     "PHP",
     "MySql",
     "HTML",
@@ -11,15 +11,30 @@ var tabProducts = [
 
 var elements = document.getElementById("kurs_programowania").getElementsByTagName("li");
 
-for(var i = 0; i < elements.length; i++)
-{
-    if(i % 2 == 0)
-    {
-        elements[i].innerHTML = "nieparzysty: " + elements[i].innerHTML;
+for(var property in elements){
+
+    if(typeof(elements[property]) != "object"){
+        break;  
     }
-    else
-    {
-        continue;
-    }
+    alert(elements[property].innerHTML);
 
 }
+
+// person = {
+//     name: "John",
+//     surname:"Doe",
+//     age: 26
+// };
+
+
+// for(var x in person){
+//     alert(person[x]);
+// }
+
+// var allCoursesString = "";
+
+// for(var course in courses){
+//     allCoursesString += courses[course];
+// }
+
+// alert(allCoursesString);
