@@ -1,13 +1,9 @@
 
 
-var programming_course = document.getElementById("kurs_programowania");
+// var programming_course = document.getElementById("kurs_programowania").getElementsByTagName("li");
+
+// alert(programming_course[0].innerHTML)
 
 
-
-programming_course.setAttribute("class","changeColor");
-
-programming_course.removeAttribute("class");
-
-alert(programming_course.childNodes[1].firstChild.textContent);
-
-programming_course.childNodes[1].firstChild.textContent = "something new";
+programming_course = document.querySelector("#kurs_programowania li")
+alert(programming_course.innerHTML)
