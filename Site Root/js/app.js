@@ -7,13 +7,18 @@
     DHTML - Dynamic HTML - HTML + CSS + JS
 */
 
-function textTest(tekst){
-    alert(tekst + "!!!!");
+function changleColor(){
+
+    this.className = "changeColor";
+
+}
+function changleColor2(){
+    
+    this.style.backgroundColor = 'green';
+
 }
 
+var test = document.getElementById('testDiv2');
 
-var testFunction = document.getElementById("testDiv2");
-
-testFunction.onclick = function(){
-    alert("Kliknięto diva");
-};
+test.onmouseover = changleColor;
+test.onmouseout = changleColor2;
