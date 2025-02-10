@@ -18,7 +18,12 @@ function changleColor2(){
 
 }
 
-var test = document.getElementById('testDiv2');
 
-test.onmouseover = changleColor;
-test.onmouseout = changleColor2;
+window.onload = function(){
+
+    var test = document.getElementById('testDiv2');
+
+    test.onmouseover = changleColor;
+    test.onmouseout = changleColor2;
+
+}
