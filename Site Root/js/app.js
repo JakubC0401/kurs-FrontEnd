@@ -27,30 +27,24 @@ function makeEvent(event, eventObj)
 
 window.onload = function(){
 
-    var test = document.getElementById('test');
-    var pogrubiony = document.getElementById('pogrubiony');
-    var przycisk = document.getElementById('przycisk');
+    var email = document.getElementById('email');
+    var submitFormButton = document.querySelector("#newsletter input[type='submit']");
 
-    
-    test.onclick = function(event){
+    submitFormButton.onclick = function(e){
 
-        alert("Kliknięto w zwykły tekst");
-        makeEvent(event, this);
+        var tmp = document.getElementById("tmp");
+        e.preventDefault();
 
-    };
-    pogrubiony.onclick = function(event){
 
-        makeEvent(event, this);
-        alert("Kliknięto w pogrubiony tekst");
-        event.stopPropagation();
+        tmp.innerHTML = email.value;
 
-    };
-    przycisk.onclick = function(event){
+        if(email.value === 'jc@gmail.com'){
+            this.parentNode.submit();
+        }
+        else{
+            alert("Niepoprawny email");
+        }
 
-        makeEvent(event, this);
-        alert("Kliknięto w przycisk");
-        event.stopPropagation();
-
-    };
-    
+        
+    }
 };
