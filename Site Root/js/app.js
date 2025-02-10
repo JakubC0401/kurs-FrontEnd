@@ -10,31 +10,47 @@
     removeEventListener - metoda do usuwania zdarzeń z elementów
 */
 
-function makeEvent(event, str)
+function makeEvent(event, eventObj)
 {
     var e = window.event || event;  
-
-    var tmp = document.getElementById('temp');
-
-    tmp.innerHTML = e.clientX + ' ' + e.clientY + ' ' + str;   
+    var srcElement = e.target || e.srcElement;
 
 
-    var tooltip = document.getElementById('tooltip');
+    var tmp = document.getElementById('tmp');
 
-    tooltip.style.display = 'block';
+    tmp.innerHTML = "źródło eventu: "+ srcElement.tagName + "<br>event przypisany do tagu: "+ eventObj.tagName; 
 
-    tooltip.style.left = e.clientX + 10 + 'px';
-    tooltip.style.top = e.clientY + 10 + 'px';
+
+
     
 };
 
 window.onload = function(){
 
-    var test = document.getElementById('testDiv');
+    var test = document.getElementById('test');
+    var pogrubiony = document.getElementById('pogrubiony');
+    var przycisk = document.getElementById('przycisk');
 
-    test.onmousemove = function(event){
+    
+    test.onclick = function(event){
 
-        
-        makeEvent(event, this.tagName);
+        alert("Kliknięto w zwykły tekst");
+        makeEvent(event, this);
+
     };
+    pogrubiony.onclick = function(event){
+
+        makeEvent(event, this);
+        alert("Kliknięto w pogrubiony tekst");
+        event.stopPropagation();
+
+    };
+    przycisk.onclick = function(event){
+
+        makeEvent(event, this);
+        alert("Kliknięto w przycisk");
+        event.stopPropagation();
+
+    };
+    
 };

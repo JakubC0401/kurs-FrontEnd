@@ -7,3 +7,18 @@
     text-align: center;
     padding: 10px;
 }
+
+#test{
+    background-color: red;
+    height: 50px;
+    width: 300px;
+
+}
+#pogrubiony{
+    background-color: yellow;
+    height: 50px;
+    width: 150px;
+}
+#przycisk{
+    background-color: teal;
+}
