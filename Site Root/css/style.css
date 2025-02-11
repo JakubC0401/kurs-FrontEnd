@@ -1,0 +1,17 @@
+.thumbnail{
+    width: 250px;
+    height: 250px;
+}
+.thumbnail:hover{
+    border-bottom: 3px solid red;
+    margin-bottom: -3px;
+}
+#mainImage{
+    width: 300px;
+    height: 300px;
+    display: inline;
+}
+.current{
+    border-bottom: 3px solid red;
+    margin-bottom: -3px;
+}

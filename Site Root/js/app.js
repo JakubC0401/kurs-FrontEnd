@@ -9,81 +9,27 @@
     addEvetListener - metoda do dodawania zdarzeń do elementów
     removeEventListener - metoda do usuwania zdarzeń z elementów
 */
-var timeOutStoper;
+window.onload = function() {
 
-function stopWatch (timeHolder, time){
-    timerHolder.innerHTML = time--;
+    var mainImageVar = document.getElementById('mainImage');
 
-    if(time < 0){
-        return;
-    }
+    var image = new Image();
 
-    timeOutStoper =  setTimeout(function(){
+    mainImageVar.appendChild(image);
 
-        stopWatch(timerHolder, time);
+    var thumbnails = document.getElementsByClassName('thumbnail');
+    
+    var currentthumbnail = thumbnails[0];
+    currentthumbnail.className += " current";
+    image.src = currentthumbnail.src;
 
-    },1000);
-    return timeOutStoper;
-};
-
-
-function Stopwatch(timerHolder){
-
-    this.timerHolder = timerHolder;
-    this.startValue;
-    this.timeOutReference = undefined;
-
-    this.run = function(startValue){
-
-        this.startValue = startValue;
-
-        if(this.timeOutReference ){
-           this.stop();
+    for (var i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].onmouseover = function() {
+            currentthumbnail.className += " current";
+            currentthumbnail.className = currentthumbnail.className.replace(" current", "");
+            image.src = this.src;
+            
+            currentthumbnail = this;
         };
-        this.startStoper();
-    };
-    this.startStoper = function()
-    {
-        if(this.startValue < 0){
-            return;
-        }
-
-        this.timerHolder.innerHTML = this.startValue--;
-        var self = this;
-        
-        this.timeOutReference = setTimeout(function(){
-            self.startStoper();
-        }, 1000);
-    };
-    this.stop = function(){
-        clearTimeout(this.timeOutReference);
     }
-
-    this.continue = function(){
-        this.startStoper();
-    }
-}
-
-window.onload = function(){
-
-    
-    var timerStartButtonVariable = document.getElementById('timerStart');
-    var timerStopButtonVariable = document.getElementById('timerStop');
-    var timerResumeButtonVariable = document.getElementById('timerResume');
-    var timerHolderVariable = document.getElementById('timerHolder');
-    
-    var timeIntervalRef;
-
-    var stopWatch = new Stopwatch(timerHolder);
-
-    timerStartButtonVariable.onclick = function(){
-        var startValueVariable = document.getElementById('startValue').value;
-        stopWatch.run(startValueVariable);
-    };
-    timerStopButtonVariable.onclick = function(){
-        stopWatch.stop();
-    }
-    timerResumeButtonVariable.onclick = function(){
-        stopWatch.continue();
-    };
 };
