@@ -9,46 +9,45 @@
     addEvetListener - metoda do dodawania zdarzeń do elementów
     removeEventListener - metoda do usuwania zdarzeń z elementów
 */
+var timeOutStoper;
 
+function stopWatch (timeHolder, time){
+    timerHolder.innerHTML = time--;
 
-function movingImage(e, objectMove){
-    objectMove.style.left = e.clientX - objectMove.width/2 + 'px';
-    objectMove.style.top = e.clientY - objectMove.height/2 + 'px';
-}
+    if(time < 0){
+        return;
+    }
+
+    timeOutStoper =  setTimeout(function(){
+
+        stopWatch(timerHolder, time);
+
+    },1000);
+    return timeOutStoper;
+};
+
 
 window.onload = function(){
-    var wykrzyknik = document.getElementById('wykrzyknik');
-    var toTopButton = document.getElementById('toTopButton');
+    var startValue = document.getElementById('startValue');
+    var timerStartButton = document.getElementById('timerStart');
+    var timerStopButton = document.getElementById('timerStop');
+    var timerHolder = document.getElementById('timerHolder');
 
+    
+    timerStartButton.onclick = function(){
+        var startValue = document.getElementById('startValue').value;
+        timerHolder.innerHTML = startValue;
 
-    window.onscroll = function(){
-        if(window.scrollY > 300){
-            toTopButton.style.display = 'block';
-        } else {
-            toTopButton.style.display = 'none';
-        }
-    }
-
-    toTopButton.onclick = function(){
-        window.scrollTo(0, 0);
-    };
-
-    wykrzyknik.onmousedown = function(){
-
-        var tempSelf = this;
-
-        document.onmousemove = function(e){
-
-            movingImage(e, tempSelf);
-
+        if(timeOutStoper){
+            clearTimeout(timeOutStoper);
         };
+
+        timeOutStoper = stopWatch(timerHolder, startValue);
+
     };
 
-    wykrzyknik.onmouseup = function(){
-        document.onmousemove = null;
+    timerStopButton.onclick = function(){
+        clearTimeout(timeOutStoper);
     };
 
-    wykrzyknik.ondragstart = function(e){
-        e.preventDefault();
-    }
 };
