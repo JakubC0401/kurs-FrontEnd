@@ -27,27 +27,63 @@ function stopWatch (timeHolder, time){
 };
 
 
+function Stopwatch(timerHolder){
+
+    this.timerHolder = timerHolder;
+    this.startValue;
+    this.timeOutReference = undefined;
+
+    this.run = function(startValue){
+
+        this.startValue = startValue;
+
+        if(this.timeOutReference ){
+           this.stop();
+        };
+        this.startStoper();
+    };
+    this.startStoper = function()
+    {
+        if(this.startValue < 0){
+            return;
+        }
+
+        this.timerHolder.innerHTML = this.startValue--;
+        var self = this;
+        
+        this.timeOutReference = setTimeout(function(){
+            self.startStoper();
+        }, 1000);
+    };
+    this.stop = function(){
+        clearTimeout(this.timeOutReference);
+    }
+
+    this.continue = function(){
+        this.startStoper();
+    }
+}
+
 window.onload = function(){
-    var startValue = document.getElementById('startValue');
-    var timerStartButton = document.getElementById('timerStart');
-    var timerStopButton = document.getElementById('timerStop');
-    var timerHolder = document.getElementById('timerHolder');
 
     
-    timerStartButton.onclick = function(){
-        var startValue = document.getElementById('startValue').value;
-        timerHolder.innerHTML = startValue;
+    var timerStartButtonVariable = document.getElementById('timerStart');
+    var timerStopButtonVariable = document.getElementById('timerStop');
+    var timerResumeButtonVariable = document.getElementById('timerResume');
+    var timerHolderVariable = document.getElementById('timerHolder');
+    
+    var timeIntervalRef;
 
-        if(timeOutStoper){
-            clearTimeout(timeOutStoper);
-        };
+    var stopWatch = new Stopwatch(timerHolder);
 
-        timeOutStoper = stopWatch(timerHolder, startValue);
-
+    timerStartButtonVariable.onclick = function(){
+        var startValueVariable = document.getElementById('startValue').value;
+        stopWatch.run(startValueVariable);
     };
-
-    timerStopButton.onclick = function(){
-        clearTimeout(timeOutStoper);
+    timerStopButtonVariable.onclick = function(){
+        stopWatch.stop();
+    }
+    timerResumeButtonVariable.onclick = function(){
+        stopWatch.continue();
     };
-
 };
