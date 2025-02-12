@@ -12,7 +12,7 @@ $(document).ready(function() {
 
    $("div").click(function(){
        $(this).css("font-weight", "bold");
-   });
+   }).css("cursor", "pointer");
 
 
 });
