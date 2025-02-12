@@ -1,8 +1,11 @@
 
 
-window.onload = function() {
-    
-    alert("lallalaa");
-    
 
-}
+$(document).ready(
+    function() 
+    {
+
+        alert("lallalaa");
+    }
+);
+
