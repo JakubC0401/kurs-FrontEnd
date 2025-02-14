@@ -11,42 +11,25 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <form id="myForm">
-
-      Szukaj: <input type="search" name="searchValue" placeholder="Search">
-
-      E-mail: <input type="email" name="email" placeholder="Email">
-
-      URL: <input type="url" name="url" placeholder="URL">
-
-      Telefon: <input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789">
-
-      Numer: <input type="number" name="number" placeholder="Number" min="0" max="10" step="2">
-
-      Zasięg: <input id = "rangeTest" type="range" name="range" id="" min="0" max="10" step="2">
-      <input type="text" id="rangeValue" value="0">
-      Kolor:
-      <input type="color" name="color" id="color">
-      Czas:
-      <input type="time" name="" id="">
-      Tydzień
-      <input type="week" name="" id="">
-      Miesiąc
-      <input type="month" name="" id="">
-      Data
-      <input type="date" name="" id="">
-      Data i czas
-      <input type="datetime-local" name="" id="">
-
-      Twój ulubiony kolor: <input type="text" list="colors" >
-      <datalist id="colors" value="Search"> 
-        <option value="Red"></option>
-        <option value="Green"></option>
-        <option value="Blue"></option>
-        <option value="Yellow"></option>
-        <option value="Black"></option>
-      </datalist>
+    
+    <form id="AG">
+      Imie: <input class="contact_input" data-type="name" data-required ="true" type="text">
+      E-mail: <input  class="contact_input" data-type="email" data-required ="true" type="text">
+      Telefon: <input  class="contact_input" data-type="phone" data-required ="true" type="text">
     </form>
+
+    <form id="BC">
+      Imie: <input class="contact_input" data-type="name" data-required ="true" type="text">
+      E-mail: <input  class="contact_input" data-type="email" data-required ="true" type="text">
+      Telefon: <input  class="contact_input" data-type="phone" data-required ="true" type="text">
+    </form>
+
+    <form id="AS">
+      Imie: <input class="contact_input" data-type="name" data-required ="true" type="text">
+      E-mail: <input  class="contact_input" data-type="email" data-required ="true" type="text">
+      Telefon: <input  class="contact_input" data-type="phone" data-required ="true" type="text">
+    </form>
+    
 
   </body>
 </html>

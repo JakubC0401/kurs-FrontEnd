@@ -1,23 +1,20 @@
 
 $(document).ready(function() {
 
+    var value = $('#AG input[data-type="name"]').attr('data-type');
+    //or
+    var value2 = $('#AG input[data-type="email"]').data('required');
+    //or
+    var value3 = $('#BC input[data-type="phone"]').attr('type');
 
-    $("#myForm").submit(function(e){
-        var searchValue = $("input[name='searchValue']").val();
+    alert(value);
+    alert(value2);
+    alert(value3);
 
-        if(searchValue){
-            window.location.href = "https://www.google.pl/search?q=" + searchValue;
-        }
-        else{
-            alert("Please enter a search value");
-        }
-        e.preventDefault();
-    })
 
-    $("#rangeTest").change(function(){
-        $("#rangeValue").attr("value", $(this).val());
-    })
+    //bez jQuery
 
-  
+    var value4 = document.getElementById('AG').getElementsByTagName('input')[0].getAttribute('data-type');
+    alert(value4);
 });
 
