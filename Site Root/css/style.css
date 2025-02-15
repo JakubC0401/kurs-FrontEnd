@@ -2,14 +2,3 @@ body{
     background-color: rgb(53, 53, 53);
 
 }
-h1{
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-video{
-    margin-left: 30%;
-    margin-top: 5%;
-    border-radius: 10px;
-}
