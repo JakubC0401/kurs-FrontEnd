@@ -2,12 +2,3 @@ body{
     background-color: rgb(53, 53, 53);
 
 }
-#dropZone{
-    border: 2px dashed #0087F7;
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    color: #0087F7;
-    cursor: pointer;
-    transition: 0.3s;
-}
