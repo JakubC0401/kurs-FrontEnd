@@ -1,58 +1,57 @@
 
-$(document).ready(function() {
+$(document).ready(function() 
+{
 
+    function init(){
 
-    $("#dropFileBox").dragover(function(event){
-        event.preventDefault();
-    }).drop(function(event){
-        event.preventDefault();
+        $("form input.stored").each(function(){
 
-        var files = event.dataTransfer.files;
+            var form = $(this).parent();
 
-        if(files.length){
-            var file = files[0];
+            var formId = form.attr("id");
+    
+            var type = $(this).data("type");
+
+            if(localStorage.getItem( "#"+formId + "input[data-type='" + type + "']", $(this).val()))
+            {
+
+                $(this).val(localStorage.getItem( "#"+formId + "input[data-type='" + type + "']", $(this).val()));
+            }
+
+        });
+
+        $("form input[type='submit']").click(function(event){
+
+            event.preventDefault();
+            $("input.stored", event.target.parentNode).each(function(){
+
+                
+            var form = $(this).parent();
+
+            var formId = form.attr("id");
+    
+            var type = $(this).data("type");
+            
+            localStorage.removeItem( "#"+formId + "input[data-type='" + type + "']");
+
+            $("#"+formId + "input[data-type='" + type + "']").val("");
+            });
+            
+        });
+
+    };
+    
+    init();
+    $("input.stored").keyup(function(){
+       
+        var form = $(this).parent();
+
+        var formId = form.attr("id");
+
+        var type = $(this).data("type");
         
-            var reader = new FileReader();
-
-            reader.readAsDataURL(file);
-
-            reader.onloadend =  function(event){
-                onLoadReaderHandlingFunction(event,file);
-            }
-
-            formData = new FormData();
-
-            formData.append('file', file);
-
-            var xhr = new XMLHttpRequest();
-
-            xhr.open('POST','upload_file.php', true);
-
-            xhr.onload = function(){
-                if(xhr.status =200){
-                    alert(xhr.responseText)
-                }
-                else{
-                    alert("something went wrong")
-                }
-            }
-
-            xhr.send(formData);
-        }
+        localStorage.setItem( "#"+formId + "input[data-type='" + type + "']", $(this).val())
     });
-
-    function onLoadReaderHandlingFunction(event){
-        $("#previewImage").attr("src", event.target.result);
-        $("#previewImage").attr("width", '200');
-        $("#previewImage").attr("height", '200');
-
-
-        $("#fileName").text("name: "+file.name);
-        $("#fileSize").text("size: "+file.size);
-        $("#fileType").text("type: "+file.type);
-
-        var fileSize 
-    }
 
 });
 

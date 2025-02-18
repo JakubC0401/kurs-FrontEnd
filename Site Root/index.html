@@ -9,23 +9,25 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../jquery-ndd-master/jquery.ndd.js"></script>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="dropFileBox">
-      drop file here :)
-
-      <div id="previewContainer">
-
-        <img id ="previewImage" src="" alt="">
-        <div id ="fileName">Name: </div>
-        <div id ="fileSize">Size: </div>
-        <div id ="fileType">Type: </div>
-
-        <progress value="0" max="100"></progress><span id="percent_loader">0</span>%
-      </div>
-    </div>
+    
+    <form id="AG" action="">
+      Imie: <input class="contact_input stored" data-type="name" type="text">
+      Nazwisko:<input class="contact_input stored" data-type="email" type="text">
+      Mail: <input class="contact_input stored" data-type="tel" type="text">
+      <input type="submit">
+    </form>
   
-  
+    <form id="AB" action="">
+      Imie: <input class="contact_input stored" data-type="name" type="text">
+      Nazwisko:<input class="contact_input stored" data-type="email" type="text">
+      Mail: <input class="contact_input stored" data-type="tel" type="text">
+      <input type="submit">
+    </form>
+
+
   </body>
 </html>

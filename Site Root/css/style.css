@@ -1,13 +1,6 @@
-#dropFileBox
-{
-    margin: 10px;
-    width: 450px;
-    height: 400px;
-    border: 1px solid black;
-    font-size: 30px;
-    text-align: center;
+body{
+   
 }
-#previewContainer{
-
+.contact_input{
     margin: 10px;
 }
