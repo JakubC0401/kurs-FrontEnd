@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web workers</title>
+    <title>application cache aplikacje offline manifest.file</title>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(() => console.log("Service Worker zarejestrowany!"))
+          .catch((error) => console.log("Błąd rejestracji SW:", error));
+      }
+    </script>
 
     <script type="text/javascript" src="js/jquery.js" ></script> <!-- dodanie biblioteki jquey?pamiętaj też o pliku-->
     <script type="text/javascript" src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../jquery-ndd-master/jquery.ndd.js"></script>
-
-
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    odliczanie: <input type="text" value = "10" name="" id="count_from">
-    <input id="start_counting" type="button" value="rozpocznij odliczanie">
+    
+    <img src="images/wykrzyknik.jpg" alt="obrazek">
 
-    <div id="counter">0</div>
+
 
   </body>
 </html>
