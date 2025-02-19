@@ -1,8 +1,7 @@
-#counter{
-    margin: 20px;
-}
-#info{
-    width: 90%;
-    height: 700px;
-    border: 1px solid black;
+
+#canvas_element{
+    width: 1000px;
+    height: 800px;
+    margin: 50px;
+    border: 1px solid gray;
 }
