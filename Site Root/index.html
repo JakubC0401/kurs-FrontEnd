@@ -3,15 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>application cache aplikacje offline manifest.file</title>
+    <title>GEOLOKALIZACJA</title>
 
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
-          .then(() => console.log("Service Worker zarejestrowany!"))
-          .catch((error) => console.log("Błąd rejestracji SW:", error));
-      }
-    </script>
+
 
     <script type="text/javascript" src="js/jquery.js" ></script> <!-- dodanie biblioteki jquey?pamiętaj też o pliku-->
     <script type="text/javascript" src="js/app.js"></script>
@@ -21,8 +15,8 @@
   </head>
   <body>
     
-    <img src="images/wykrzyknik.jpg" alt="obrazek">
 
+    <div id="info"></div>
 
 
   </body>
