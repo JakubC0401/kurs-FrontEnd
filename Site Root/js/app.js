@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     $(".header span").on("click", function() {
         let index = $(this).data("index"); // Pobieramy indeks klikniętego span
-        $(".gh" + index + ".hidden_text").toggle(); // Tylko odpowiedni element się rozwija
+        $(".gh" + index + ".hidden_text").slideToggle(300); // Tylko odpowiedni element się rozwija
         
         if ($(this).text() === "więcej info") {
             $(this).text("schowaj");
