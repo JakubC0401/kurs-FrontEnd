@@ -1,65 +1,28 @@
-var hint = $("<div class = 'box'> testowy tekst </div>");
-
 $(document).ready(function() {
-
-    
-    hint.css("opacity",0.9);
-    $("body").prepend(hint);
-
-    $(":button[value='Schowaj']").click(function() {
-       
-        hint.animate({
-            "left":10,
-
-        },1000)
-        .animate({
-            "width": 0,
-            "height": 0,
-            "opacity": 0
-        }, 500,
-    function(){
-        hint.css("display","none");
-    });
-        
-    });
-
-    $(":button[value='Pokaż']").click(function() {
-       
-        hint.animate({
-            
-            "width":350,
-            "height":350,
-            "opacity":0.9
-        },500).animate({
-            "left":0
-        }, function(){
-            hint.css("display","flex");
-        });
-    });
-    setInterval(boxAnimation, 2000);
-
+    swapImage();
 });
 
-function boxAnimation(){
-    hint.animate({
-        "left":10,
+function swapImage() {
+    var firstImage = $(".images_swapper:first-child");
+    firstImage.addClass("current_image").css("opacity", 1);
 
-    },1000)
-    .animate({
-        "width": 0,
-        "height": 0,
-        "opacity": 0
-    }, 500,
-    function(){
-        hint.css("display","none");
-    }).animate({
-            
-        "width":350,
-        "height":350,
-        "opacity":0.9
-    },500).animate({
-        "left":0
-    }, function(){
-        hint.css("display","flex");
+    swap();
+}
+
+function swap() {
+    var current = $(".current_image");
+    var next = current.next(".images_swapper");
+
+    if (next.length === 0) {
+        next = $(".images_swapper:first-child");
+    }
+
+    next.addClass("next_image").css("opacity", 0);
+
+    current.animate({"opacity": 0}, 2000, function() {
+        $(this).removeClass("current_image");
+        next.removeClass("next_image").addClass("current_image");
     });
+
+    next.animate({"opacity": 1}, 2000, swap);
 }
