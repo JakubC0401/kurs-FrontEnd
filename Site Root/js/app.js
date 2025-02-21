@@ -1,33 +1,35 @@
 $(document).ready(function() {
-    $("#course_list tr td:nth-child(2)").addClass("cell_control");
 
-    $("#course_list tr").addClass("pattern1");
-    $("#course_list tr:even").addClass("pattern2");
+    var hint = $("<div class = 'box'> testowy tekst </div>");
+    hint.css("opacity",0.9);
+    $("body").prepend(hint);
 
-    var hint = $("<div class='box'>testowy tekst</div>").css({
-        "position": "absolute",
-        "display": "none",
-        "background": "#eee",
-        "padding": "5px",
-        "border": "1px solid #ccc"
+    $(":button[value='Schowaj']").click(function() {
+       
+        hint.animate({
+            "left":10,
+
+        },1000)
+        .animate({
+            "width": 0,
+            "height": 0,
+            "opacity": 0
+        }, 500,
+    function(){
+        hint.css("display","none");
+    });
+        
     });
 
-    $("body").append(hint);
-
-    $("#course_list tr:not(:first-child)").hover(function(event) {
-        hint.css({
-            "display": "block",
-            "top": event.pageY + 10 + "px",
-            "left": event.pageX + 10 + "px"
-        });
-    }, function() {
-        hint.css("display", "none");
-    });
-
-    $("#course_list tr:not(:first-child)").mousemove(function(event) {
-        hint.css({
-            "top": event.pageY + 10 + "px",
-            "left": event.pageX + 10 + "px"
+    $(":button[value='Pokaż']").click(function() {
+       
+        hint.animate({
+            "left":0,
+            "width":350,
+            "height":350,
+            "opacity":0.9
+        },500,function(){
+            hint.css("display","flex");
         });
     });
 });
