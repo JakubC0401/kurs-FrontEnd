@@ -27,27 +27,23 @@
   <body>
 
 
-    <input type="text" id="datepicker">
-
-    <script>
-        $(document).ready(function() {
-            $("#datepicker").datepicker();
-        });
-    </script>
-
-    <button id="btn">Kliknij mnie</button>
-
-    <script>
-        $(document).ready(function() {
-            $("#btn").on("click", function() {
-                $(this).effect("bounce", { times: 3 }, 500);
-            });
-        });
-    </script>
-
-    <div id="dragMe">
-      lalala
+    
+<div class="gallery">
+  <div class="gallery__bg"><img src="#"/></div>
+  <div class="gallery__search">
+    <label>Show me pictures of</label>
+    <input type="text" value="mountains"/>
+  </div>
+  <div class="gallery__main">
+    <div class="gallery__core"><img id="mainImage" src="images/photo1.jpg"/></div>
+    <div class="gallery__track">
+        <img class="thumb" src="images/1.png"/>
+        <img class="thumb" src="images/2.png"/>
+        <img class="thumb" src="images/3.png"/>
     </div>
+  </div>
+</div><a class="branding" href="https://jboxcreative.com" target="_blank">
+  <img src="https://jboxcreative.com/wp-content/uploads/2018/12/jbox-logo-abstract-white-200x200.png"/></a>
 
   </body>
 </html>
