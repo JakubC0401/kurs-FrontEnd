@@ -1,13 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!-- komentarz -->
 <wizytowki>
 
-    <wizytowka>
-        <b> tu jest jakiś pogrubiony tekst </b>
+    <wizytowka id="1">
+      <imie>Jakub</imie>
+      <nazwisko>Czyż</nazwisko>
+      <telefon typ="praca">132-435-234</telefon>
+      <telefon typ="dom">(32)646-11-88</telefon>
+      <e-mail>jajaczy@gmail.com</e-mail>
     </wizytowka>
 
-    <wizytowka>
-        <a href="aaaa"> </a>
+ <wizytowka id="2">
+      <imie>Aleks</imie>
+      <nazwisko>Czyż</nazwisko>
+      <telefon typ="praca">132-435-234</telefon>
+      <telefon typ="dom">(32)646-11-88</telefon>
+      <e-mail>aaaczy@gmail.com</e-mail>
     </wizytowka>
     
     <wizytowka>
