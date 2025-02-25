@@ -8,20 +8,23 @@
     <script type="text/javascript" src="js/ajax.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body onload="ajaxInit();">
+  <body >
     
     <form action="post">
 
-      Wybierz pliki: <select name="" id="" onchange="jakastamfunckja();">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
+      Wybierz pliki: <select name="" id="" onchange="fileToDiv('text', this.value);">
+        <option value="plik1.txt">1</option>
+        <option value="plik22.php">2</option>
+        <option value="plik3.html">3</option>
+        <option value="plik4.xml">4</option>
+
       </select>
     </form>
 
+    <br> 
 
     <div id="tekst">
-      <!-- Tu wyświetli się wczytana zawartość z pliku..... -->
+       Tu wyświetli się wczytana zawartość z pliku..... 
     </div>
  </body>
 </html>
