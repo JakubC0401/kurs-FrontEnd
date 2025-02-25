@@ -48,7 +48,11 @@ function fileToDiv(id, URL){
         XHR.onreadystatechange = function(){
 
             if(XHR.readyState == 4){
-                if(XHR.status == 200){
+                if(XHR.status == 1 || XHR.status ==2 || XHR.status == 4){
+                    document.getElementById("tekst").innerHTML = "<img src='Spinner-2.gif' alt='loading data' />"
+
+                }
+                else if(XHR.status == 200){
 
                     document.getElementById("tekst").innerHTML = XHR.responseText;
                 
@@ -56,7 +60,7 @@ function fileToDiv(id, URL){
                 else{
 
                     alert("wystąpił błąd" + XHR.status);
-                    
+
                 }
             }
 
